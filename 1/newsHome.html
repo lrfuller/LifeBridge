@@ -1,4 +1,20 @@
 <style>
+    .follow_margin {
+        margin-top: 12px;
+    }
+
+    @media screen and (min-width: 851px) {
+        .follow_margin {
+            margin-top: 760px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .follow_margin {
+            margin-top: 745px;
+        }
+    }
+
     @media screen and (min-width: 64em) {
         .small_width {
             max-width: 346px;
@@ -37,33 +53,31 @@
             <li><a href="#">The Cardiovascular Institute</a></li>
         </ul>-->
                     <ul class="nav__secondary-level nav__secondary__level3">
-                        <li><a href="https://www.lifebridgehealth.org/newsroom/PressReleases.aspx">News Releases</a>
+                        <li><a href="https://www.lifebridgehealth.org/newsroom/NewsReleases.aspx">News Releases</a>
                         </li>
                         <li><a href="https://www.lifebridgehealth.org/newsroom/CommunityCalendar.aspx">Calendar of
                                 Events</a></li>
                         <li><a href="https://www.lifebridgehealth.org/Main/AnnualReport.aspx">Annual Report and
                                 Community Benefit Summary</a></li>
-                        <li><a href="http://www.lifebridgehealth.org/Newsroom/CommunityCalendar.aspx">Calendar of
-                                Events</a></li>
                         <li><a href="http://www.lifebridgehealth.org/Newsroom/MediaHIPPAPolicies.aspx">Media Policy</a>
                         </li>
-                        <li><a href="http://www.lifebridgehealth.org/Newsroom/LifeBridgeHealthPressTeam.aspx">Media
+                        <li><a href="http://www.lifebridgehealth.org/Newsroom/LifeBridgeHealthNewsTeam.aspx">Media
                                 Relations Team</a></li>
                         <li><a href="http://www.lifebridgehealth.org/Newsroom/NewsReleases.aspx">News Releases</a></li>
                     </ul>
                 </div>
-                <div class="grid-padding-y small_width" style="max-width: 346px;">
+                <div class="grid-padding-y small_width">
                     <div class="cell medium-12 large-8">
-                        <div class="featured-stories box box--padding">
+                        <div class="featured-stories box box--padding" style="max-height: 1090px;">
                             <h2 class="featured-stories__title">In the News</h2>
-                            <div class="grid-x grid-margin-x">
+                            <div class="grid-x grid-margin-x" style="max-height: 978px; overflow-y: scroll;">
                                 <div class="featured-stories__main background--gray cell">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="follow box small_width" style="margin-bottom: 10px;">
+                <!-- <div class="follow box small_width" style="margin-bottom: 10px;">
                     <div class="follow__title">Follow LifeBridge on<br>
                         Social Media:</div>
                     <div class="follow__icons grid-x align-center">
@@ -84,7 +98,7 @@
                                 class="icon icon--linkedin"></em></a>
                     </div>
                 </div>
-                <div class="follow__facebook align-center box vertical-margin-2 small_width">
+                <div class="follow__facebook align-center box small_width">
                     <div id="fb-root"></div>
                     <script>(function (d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0];
@@ -100,41 +114,88 @@
                             <a href="https://www.facebook.com/lifebridgehealth">LifeBridge Health</a>
                         </blockquote>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="cell small-12 large-8 vertical-margin-2-small vertical-margin-0-large">
                 <div
                     class="box box--padding box--padding-bottom box--no-shadow box--small-text background--offwhite rounded-corner">
                     <!--<h3>Contact Us<br>
         </h3>-->
-                    <div
-                        class="box box--small box--padding box--margin-left background--white u-float-right--medium vertical-margin-1-small vertical-margin-0-large">
-                        <h3>To request an appointment with a doctor, call <a
-                                href="tel: 1-410-601-9355">410-601-9355</a>.<br>
-                            <br>
-                            Media Contacts
-                        </h3>
-                        <p><strong>Helene King</strong><br>
-                            <a href="tel: 1- 410-601-2296">410-601-2296</a><br>
-                            <a href="mailto:hking@lifebridgehealth.org">Click here to email</a>
-                        </p>
-                        <p><strong>Judy Carmichael</strong><br>
-                            <a href="410-521-5978">410-521-5978</a>, based at Northwest Hospital<br>
-                            <a href="mailto:jcarmichael3@lifebridgehealth.org">Click here to email</a>
-                        </p>
-                        <p><strong>Simone Lindsay</strong><br>
-                            <a href="410-871-6836">410-871-6836</a>, based at Carroll Hospital<br>
-                            <a href="mailto:slindsay@lifebridgehealth.org">Click here to email</a>
-                        </p>
-                        <p><strong>Sharon Boston</strong>, director of public relations<br>
-                            <a href="tel: 1-410-601-4350">410-601-4350</a><br>
-                            Email: <a href="mailto:svboston@life bridgehealth.org">Click here to email</a><span
-                                style="font-size: 12.1104px;"><br>
-                            </span>
-                        </p>
-                        <p>LifeBridge Health Marketing office <strong></strong> <a
-                                href="tel: 1-410-601-5022">410-601-5022</a><br>
-                        </p>
+                    <div class=" box--small u-float-right--medium vertical-margin-1-small vertical-margin-0-large
+        ">
+                        <div
+                            class="box box--small box--padding box--margin-left background--white u-float-right--medium vertical-margin-1-small vertical-margin-0-large">
+                            <h3>To request an appointment with a doctor, call <a
+                                    href="tel: 1-410-601-9355">410-601-9355</a>.<br>
+                                <br>
+                                Media Contacts
+                            </h3>
+                            <p><strong>Helene King</strong><br>
+                                <a href="tel: 1- 410-601-2296">410-601-2296</a><br>
+                                <a href="mailto:hking@lifebridgehealth.org">Click here to email</a>
+                            </p>
+                            <p><strong>Judy Carmichael</strong><br>
+                                <a href="410-521-5978">410-521-5978</a>, based at Northwest Hospital<br>
+                                <a href="mailto:jcarmichael3@lifebridgehealth.org">Click here to email</a>
+                            </p>
+                            <p><strong>Simone Lindsay</strong><br>
+                                <a href="410-871-6836">410-871-6836</a>, based at Carroll Hospital<br>
+                                <a href="mailto:slindsay@lifebridgehealth.org">Click here to email</a>
+                            </p>
+                            <p><strong>Sharon Boston</strong>, director of public relations<br>
+                                <a href="tel: 1-410-601-4350">410-601-4350</a><br>
+                                Email: <a href="mailto:svboston@life bridgehealth.org">Click here to email</a><span
+                                    style="font-size: 12.1104px;"><br>
+                                </span>
+                            </p>
+                            <p>LifeBridge Health Marketing office <strong></strong> <a
+                                    href="tel: 1-410-601-5022">410-601-5022</a><br>
+                            </p>
+                        </div>
+                        <div class="follow_margin box--margin-left follow box small_width" style="margin-bottom: 10px;">
+                            <div class="follow__title">Follow LifeBridge on<br>
+                                Social Media:</div>
+                            <div class="follow__icons grid-x align-center">
+                                <a class="follow__icon follow__icon--facebook"
+                                    href="https://www.facebook.com/LifeBridgeHealth"><span class="show-for-sr">Follow us
+                                        on
+                                        Facebook</span><em class="icon icon--facebook"></em></a>
+                                <a class="follow__icon follow__icon--twitter" href="http://twitter.com/lbhealth"><span
+                                        class="show-for-sr">Follow us on Twitter</span><em
+                                        class="icon icon--twitter"></em></a>
+                                <a class="follow__icon follow__icon--instagram"
+                                    href="http://www.instagram.com/lifebridgehealth"><span class="show-for-sr">Follow us
+                                        on
+                                        Instagram</span><em class="icon icon--instagram-1"></em></a>
+                                <a class="follow__icon follow__icon--youtube"
+                                    href="http://www.youtube.com/lifebridgehealth"><span class="show-for-sr">Follow us
+                                        on
+                                        YouTube</span><em class="icon icon--youtube"></em></a>
+                                <a class="follow__icon follow__icon--linkedin"
+                                    href="http://www.linkedin.com/company/lifebridge-health/careers"><span
+                                        class="show-for-sr">Follow us on LinkedIn</span><em
+                                        class="icon icon--linkedin"></em></a>
+                            </div>
+                        </div>
+                        <div class="box--margin-left follow__facebook align-center box small_width">
+                            <div id="fb-root"></div>
+                            <script>(function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-page" data-tabs="timeline" data-width="500px" data-show-facepile="false"
+                                data-hide-cover="true" data-adapt-container-width="true" data-small-header="true"
+                                data-height="596" data-href="https://www.facebook.com/lifebridgehealth">
+                                <blockquote class="fb-xfbml-parse-ignore"
+                                    cite="https://www.facebook.com/lifebridgehealth">
+                                    <a href="https://www.facebook.com/lifebridgehealth">LifeBridge Health</a>
+                                </blockquote>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- end .box -->
                     <p class="vertical-margin-1-small vertical-margin-0-large">
