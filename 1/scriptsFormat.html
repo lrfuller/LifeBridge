@@ -8,77 +8,41 @@ format='{0:d}' /]
 
 
 <script>
-    let rows = document.querySelectorAll('tr');
-    rows.forEach((row) => {
-        let z = document.createElement("td");
-        z.textContent = `(row #${row.rowIndex})`;
-        row.appendChild(z);
-    });
 
-    let rowCollection = document.getElementById("lifebridge").nextSibling.nextSibling.children[0].children;
-    let rows = [].slice.call(rowCollection);
-    let year = new Date().getFullYear()
-    // rows.filter((item, index) => rows.indexOf(item) != index) < tweak this
-    
-    // let findDuplicates = arr => rows.filter((item, index) => rows.indexOf(item) != index)
+    // document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        createHeader();
+    }, 1000);
+    // }, false);
 
-    // for (i = 0; i < rows.length; i++) {
-        // if (rows[i].innerHTML.indexOf(year) != -1) {
-        //     let z = document.createElement("tr");
-            
-        //     z.textContent = year;
-        //     rows[i].append(z);
-        //     year = year - 1;
-        //     // console.log(row.innerHTML.indexOf(year - 1)!= -1)
-        // }
-    // }
+    createHeader = function () {
+        let rowCollection = document.getElementById("lifebridge").nextSibling.nextSibling.children[0].children;
+        let table = document.getElementById("lifebridge").nextSibling.nextSibling;
+        let rows = [].slice.call(rowCollection);
+        let firstDate = rows[0].innerText;
+        const datePattern = /(\d{1,2})\/(\d{1,2})\/(\d{4})/;
 
+        let dateTemp = datePattern.exec(rows[0].innerText);
+        let previousYear = dateTemp[3];
+        let j = 0;
 
-
-
-
-    // function findDate() {
-    //     var location = window.find("2021")
-    //     while (location) {
-
-    //     }
-
-    // }
-
-
-
-
-
-
-
-
-    var TRange = null;
-
-    function findString(str) {
-        // if (parseInt(navigator.appVersion) < 4) return;
-        var strFound;
-        if (window.find) {
-            // CODE FOR BROWSERS THAT SUPPORT window.find
-            strFound = self.find(str);
-            if (!strFound) {
-                strFound = self.find(str, 0, 1);
-                while (self.find(str, 0, 1)) continue;
+        for (i = 0; i < rows.length; i++) {
+            let date = datePattern.exec(rows[i].innerText);
+            let year = date[3];
+            console.log(date)
+            if (previousYear != year) {
+                let header = "<h2>" + year + "</h2>";
+                let cell = table.insertRow(i + j);
+                cell.innerHTML = header;
+                previousYear = year;
+                year = year - 1;
+                console.log(rows.length - 1)
+                i++
+                j++
             }
+            console.log("i = " + i + "/" + rows.length)
         }
-        else if (navigator.appName.indexOf("Microsoft") != -1) {
-            // EXPLORER-SPECIFIC CODE
-            if (TRange != null) {
-                TRange.collapse(false);
-                strFound = TRange.findText(str);
-                if (strFound) TRange.select();
-            }
-            if (TRange == null || strFound == 0) {
-                TRange = self.document.body.createTextRange();
-                strFound = TRange.findText(str);
-                if (strFound) TRange.select();
-            }
-        }
-        // if (!strFound) alert("String '" + str + "' not found!")
-        // return;
+
     }
+
 </script>

@@ -64,3 +64,38 @@
             src="/Uploads/Public/Images/BackToTop.gif"></a></div>
 
 
+<script>
+    createHeader("lifebridge");
+    createHeader("sinai");
+    createHeader("northwest");
+    createHeader("levindale");
+    createHeader("carrol");
+    createHeader("grace");
+
+    function createHeader(val) {
+        let rowCollection = document.getElementById(val).nextSibling.nextSibling.children[0].children;
+        let table = document.getElementById(val).nextSibling.nextSibling;
+        let rows = [].slice.call(rowCollection);
+        let firstDate = rows[0].innerText;
+        const datePattern = /(\d{1,2})\/(\d{1,2})\/(\d{4})/;
+
+        let dateTemp = datePattern.exec(rows[0].innerText);
+        let previousYear = dateTemp[3];
+        let j = 0;
+
+        for (i = 0; i < rows.length; i++) {
+            let date = datePattern.exec(rows[i].innerText);
+            let year = date[3];
+            if (previousYear != year) {
+                let header = "<h2>" + year + "</h2>";
+                let cell = table.insertRow(i + j);
+                cell.innerHTML = header;
+                previousYear = year;
+                year = year - 1;
+                console.log(rows.length - 1)
+                i++
+                j++
+            }
+        }
+    }
+</script>
