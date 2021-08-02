@@ -27,9 +27,6 @@ WHERE cpsys_DataCurrent.Dataid = cprel_News.DataId
             WHERE (
                     cpsys_DataCurrentInTaxonomy.TaxonomyId IN ('fc062792-2768-460f-ae05-03b10da1a8d0')
                 )
-                --             WHERE (
-                --     cpsys_DataCurrentInTaxonomy.TaxonomyId IN ('1b16e72b-d8b3-47d3-9eaa-56be5a08061f')
-                -- )
         )
     )
     AND (cprel_News.IsEnabled = 1)
