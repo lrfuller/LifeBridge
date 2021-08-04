@@ -1,40 +1,492 @@
-<section id="page">
-    <!-- Defining the #page section with the section tag -->
-    <section id="articles">
-        <!-- Start Article 1 -->
-        <article id="subarticles">
-            <h1>Now practicing in Hunt Valley</h1>
-            <div class="physicianImgButton">
-                <img class="subarticlesImg"
-                    src="https://www.lifebridgehealth.org/Uploads/microsites/PhysiciansMobile/Mirza_Anisa.jpg"
-                    alt="Anisa Mirza, M.D."><br>
-                <!--<a href="https://www.lifebridgehealth.org/Main/SinaiandNorthwestHospitalPatientAppointmentRequest.aspx?id=d2e7a63d-defb-480f-aa12-6a7a74399e0e" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Mirza Appointment Request Button','','https://www.lifebridgehealth.org/Uploads/microsites/PhysiciansMobile/appt_o.png',1)"><img src="https://www.lifebridgehealth.org/Uploads/microsites/PhysiciansMobile/appt.png" alt="Request an appointment online with Anisa Mirza, M.D." id="Mirza Appointment Request Button" width="220" height="55"></a>-->
+<style>
+    /*Custom Styles */
+    .appointment {
+        font: normal;
+        font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+        font-weight: bold;
+        font-size: 26px;
+        padding: 1.5%;
+        text-align: left;
+    }
+
+    .matt {
+        font: normal;
+        font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 25px;
+    }
+
+    .W75 {
+        width: 70%;
+    }
+
+    .W25 {
+        width: 350px;
+        /* width: 25%; */
+        background-color: #ece9e8;
+    }
+
+    .W40 {
+        width: 39%;
+    }
+
+    .W60 {
+        width: 59%;
+    }
+
+    .quotebackground {
+        width: 100%;
+        height: 175px;
+        background-color: #ece9e8;
+    }
+
+    .CTAbanner {
+        background-color: #4dbeb5;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        font-size: 1.3rem;
+        color: white;
+        margin-top: -1.7%;
+        clear: both;
+        text-transform: uppercase;
+        padding: 1%;
+        z-index: 1;
+        font-weight: 550;
+        text-decoration: none;
+    }
+
+    /* Clear floats after the columns */
+    .containerplain {
+        display: table;
+        clear: both;
+    }
+
+    .infosectionleft {
+        float: left;
+
+        padding: .5%;
+        margin: .5%;
+    }
+
+    .infosectionright {
+        float: right;
+        padding: .5%;
+        margin: .5%;
+    }
+
+    /* Blue Button */
+    .GMEbutton {
+        background-color: #0075bc;
+        border: none;
+        border-radius: 4px;
+        clear: right;
+        color: white;
+        font-weight: 550;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-table;
+        font-size: 16px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .GMEbutton:hover {
+        background-color: #094579;
+        /* lighter navy lbh*/
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    .mattphoto {
+        height: 150px !important;
+        /*width: 108px !important;*/
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    .michaelphoto {
+        display: block;
+        max-height: 350px !important;
+        max-width: 250px !important;
+        width: auto;
+        height: auto;
+    }
+
+    .figure_image {
+
+        display: block;
+        max-height: 720px !important;
+        max-width: 480px !important;
+        width: auto;
+        height: auto;
+    }
+
+    .qlbuilding {
+        display: block;
+        max-height: 720px !important;
+        max-width: 720px !important;
+        /*max-width: 602px !important;*/
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+
+
+    }
+
+    /* removes blockquote border */
+
+    blockquote {
+        border-left: none !important;
+    }
+
+    @media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+
+        .quotebackground {
+            width: 100%;
+            height: 100%;
+            background-color: #ece9e8;
+            padding-bottom: 10px;
+        }
+
+
+        .matt {
+            font: normal;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+            font-weight: bold;
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        /* removes blockquote border */
+
+        blockquote {
+            border-left: none !important;
+        }
+
+        /* End Custom Styles */
+
+
+
+
+        /* TABLE STYLES */
+        /* 
+Generic Styling, for Desktops/Laptops 
+*/
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+        }
+
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background: #fff;
+        }
+
+        th {
+            background: #fff;
+            color: white;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            padding: 0px !important;
+            /*  border: 1px solid #ccc; */
+            text-align: left;
+        }
+
+    }
+
+
+
+
+    /* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+    @media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+
+        /* Force table to not be like tables anymore */
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            border: 1px solid #fff;
+        }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #fff;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        /* removes blockquote border */
+
+        blockquote {
+            border-left: none !important;
+        }
+
+        /*
+ Label the data
+ */
+        /*td:nth-of-type(1):before { content: "First Name"; }
+ td:nth-of-type(2):before { content: "Last Name"; }
+ td:nth-of-type(3):before { content: "Job Title"; }
+ td:nth-of-type(4):before { content: "Favorite Color"; }
+ td:nth-of-type(5):before { content: "Wars of Trek?"; }
+ td:nth-of-type(6):before { content: "Secret Alias"; }
+ td:nth-of-type(7):before { content: "Date of Birth"; }
+ td:nth-of-type(8):before { content: "Dream Vacation City"; }
+ td:nth-of-type(9):before { content: "GPA"; }
+ td:nth-of-type(10):before { content: "Arbitrary Data"; }*/
+    }
+
+    /* END TABLE STYLE */
+
+    @media screen and (max-width: 800px) {
+        .CTAbanner {
+            font-size: 1.4rem;
+            position: sticky;
+            padding: 2%;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        .GMEbutton {
+            /*margin-left: 25%;*/
+            /*margin-right:25%;*/
+        }
+
+
+        .infosectionleft {
+            width: 100%;
+
+            /* margin: 3% 7%;*/
+            /*padding: 2%;*/
+        }
+
+        .infosectionright {
+            width: 100%;
+
+            float: none;
+            height: auto;
+
+        }
+
+        /* removes blockquote border */
+
+        blockquote {
+            border-left: none !important;
+        }
+    }
+</style>
+
+
+<!--- top section
+if we are adding text, it should be updated in this container, and the image div moved below
+-->
+<!-- <div class="containerplain">
+    <div class="infosectionleft W75">
+        <br> -->
+<!-- <h2>Driven by patient-oriented care.</h2>
+        <p>&nbsp;</p>
+        <p>Michael Mont, M.D., is an orthopedic surgeon with over <strong>30 years of experience in complex hip and knee
+                reconstructive surgery</strong>. He returns to the Rubin Institute for Advanced Orthopedics after
+            serving as vice president of strategic initiatives for orthopedic surgery for Northwell Health, and joint
+            reconstruction system chief and attending orthopedic surgeon at Lenox Hill Hospital in New York City. Prior
+            to his time in New York, he served as chairman for the orthopedic department at the Cleveland Clinic and as
+            director of the Rubin Institute's Center for Joint Preservation and Replacement.</p>
+        <p>Dr. Mont has performed more than <strong>10,000 joint replacements</strong>, and he receives requests from
+            around the globe to provide consultations for patients with complex orthopedic cases. He specializes in
+            joint preservation, replacements, hip resurfacings and revisions. Dr. Mont performs the most difficult hip
+            and knee replacements. He has become known as the reconstructive surgeon of last resort as he is sent cases
+            from across the country and around the world that other surgeons are reluctant to attempt.</p>
+        <p>Dr. Mont a world-recognized leading authority in the field of avascular necrosis (AVN), which is also known
+            as osteonecrosis (ON). He is author of over <strong>800 peer-reviewed publications</strong> and has received
+            over <strong>100 government and industry grants</strong>. Over the last 30 years of practice, he has helped
+            to revolutionize the treatment protocol for AVN, mastering joint-saving procedures such as core
+            decompression, percutaneous drilling and bone grafting.</p>
+        <p>Dr. Mont strongly believes that healthcare should be a full-team approach and that the patient is at the
+            center of that team. He is committed to providing education so that his patients are well informed. He and
+            his team are highly accessible; he has given every patient he has helped throughout his entire career his
+            cell phone number.</p>
+        <p>Although Dr. Mont is an orthopedic surgeon, he utilizes the latest medications, techniques and tools
+            available to delay the need for joint replacement as long as possible. Dr. Mont educates his patients about
+            their unique disease process and exhausts all non-operative treatment options before recommending surgery.
+            As a result, many of his patients are effectively treated with nonsurgical interventions, including weight
+            loss, physical therapy, oral medication and injections. </p>
+        <br> -->
+<!-- <div class="matt">
+            <blockquote><strong> “” </strong></blockquote>
             </div>
-            <h2>Anisa Mirza, M.D.</h2>
-            <ul style="list-style:square;">
-                <li>Board-certified internal medicine provider</li>
+    </div>
+    <div class="infosectionright W25 box padding-1">
+        <center>
+            <h2><br>
+                Anisa Mirza, M.D.</h2>
+            <img class="subarticlesImg"
+                src="https://www.lifebridgehealth.org/Uploads/microsites/PhysiciansMobile/Mirza_Anisa.jpg"
+                alt="Anisa Mirza, M.D." style="width: 250px; height: 350px;">
+        </center>
+        <br>
+        <ul>
+            <li>Board-certified internal medicine provider</li>
+            <li>Awarded recognition by the National Committee for Quality Assurance Diabetes Recognition Program
+            </li>
+            <li>Awarded recognition by the National committee for Quality Assurance Patient-Centered Medical Home
+                Program</li>
+            <li>A member of the extensive LifeBridge Health network</li>
+        </ul>
+        <br>
+        <br>
+    </div>
+    <left>
+        <div style="clear:both;"></div>
+        <div class="appointment"><strong>To request an appointment, call <a href="tel:410-601-2663">410-601-2663</a> or
+                complete the web form below.&nbsp;</strong></div>
+    </left>
+</div>-->
+
+
+<div class="infosectionright W25 box padding-1" style="float:none">
+    <center>
+        <h2><br>
+            Anisa Mirza, M.D.</h2>
+        <img class="subarticlesImg"
+            src="https://www.lifebridgehealth.org/Uploads/microsites/PhysiciansMobile/Mirza_Anisa.jpg"
+            alt="Anisa Mirza, M.D." style="width: 250px; height: 350px;">
+    </center>
+    <br>
+    <ul>
+        <li>Board-certified internal medicine provider</li>
+        <li>Awarded recognition by the National Committee for Quality Assurance Diabetes Recognition Program
+        </li>
+        <li>Awarded recognition by the National committee for Quality Assurance Patient-Centered Medical Home
+            Program</li>
+        <li>A member of the extensive LifeBridge Health network</li>
+    </ul>
+    <br>
+    <br>
+</div>
+<left>
+    <div style="clear:both;"></div>
+    <div class="appointment"><strong>To request an appointment, call <a href="tel:410-601-2663">410-601-2663</a> or
+            complete the web form below.&nbsp;</strong></div>
+</left>
+
+
+
+
+
+
+<div class="containerplain">
+    <div class="infosectionleft W40">
+        <!-- Contact Form -->
+        <div class="grid-container vertical-margin-2-small vertical-margin-4-medium">
+            <div class="grid-x">
+                <div class="cell small-12 portlet portlet--no-shadow rounded-corner background--offwhite">
+                    <div class="portlet__text">
+                        <h4 class="u-uppercase green-blue"><a name="request"></a>Request your appointment
+                            now!</h4>
+                        <div class="grid-x grid-margin-x">
+                            <!--<div class="cell small-12 medium-4">
+                <img src="/Uploads/Public/Images/campaign/Quarry-Lake-Building.jpg" class="qlbuilding">
+                <figure class="figure float-left">
+                <img src="/Uploads/Public/Images/breast-doctor-visit.jpg" alt="Mammothon 2020" class="figure__image"><br>
                 <br>
-                <li>Awarded recognition by the National Committee for Quality Assurance Diabetes Recognition Program
-                </li>
-                <br>
-                <li>Awarded recognition by the National committee for Quality Assurance Patient-Centered Medical Home
-                    Program</li>
-                <br>
-                <li>A member of the extensive LifeBridge Health network</li>
-                <br>
-            </ul>
-            <h2>Dr. Mirza accepts most insurances and has immediate appointments available.</h2>
-            <p>Fill out the form below to request an appointment with Anisa Mirza, M.D.</p>
-            [cp:scripting key='Form' dataId='875431f1-5d97-49ab-9a50-a670642c6c7c' group='cpsys_DefaultGroup'/]
-            <div class="clear">&nbsp;</div>
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.6926422729584!2d-76.65706288483184!3d39.49885437948238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81288f7d8b3f9%3A0x9ab78b60d02afb58!2s118+Shawan+Rd+%2320%2C+Cockeysville%2C+MD+21030!5e0!3m2!1sen!2sus!4v1491508088946"
-                style="border:border:1px solid #ccc;" allowfullscreen="" frameborder="0"></iframe>
-            <h3>118 Shawan Road<br>
-                Suite 20<br>
-                Cockeysville, MD 21030</h3>
-            <p>Phone: 410-469-4981<br>
-                Fax: 410-469-4983</p>
-        </article>
+                </figure></div>-->
+                            <!--<div class="cell small-12 medium-8">-->
+                            <!-- Form -->
+                            [cp:scripting key='Form' dataId='81fe946e-c8ea-4c5c-9edb-46761e7ae9f9'
+                            group='cpsys_DefaultGroup' format='&lt;div
+                            class="form-container"&gt;{0}&lt;/div&gt;' /]
+                            <!-- End Form -->
+                            <!-- Salesforce JS -->
+                            [cp:scripting key='//RegisterUnmanagedScriptInclude'
+                            url='https://demandconnect.s3.amazonaws.com/DemandConnect3.min.js' /]<br>
+                            [cp:scripting key='RegisterUnmanagedScriptInclude'
+                            url='https://www.lifebridgehealth.org/Uploads/crm/michaelmont.js' /]<br>
+                            [cp:scripting key='RegisterUnmanagedScriptInclude'
+                            url='https://www.lifebridgehealth.org/Uploads/crm/doublesubmit.js' /]
+                            <!-- End Salesforce JS -->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="infosectionright W60">
+        <div class="background--gray background-padding vertical-margin-1-small vertical-margin-4-medium">
+            <div class="grid-container">
+                <h3 id="stories" class="tile__header u-uppercase">Location</h3>
+
+
+                <div class="grid-container vertical-margin-2-small vertical-margin-3-large">
+                    <div class="portlet rounded-corner vertical-margin-1-small vertical-margin-2-medium">
+                        <div class="portlet__text">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 large-8">
+                                    <iframe style="border:0"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.6926422729584!2d-76.65706288483184!3d39.49885437948238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81288f7d8b3f9%3A0x9ab78b60d02afb58!2s118+Shawan+Rd+%2320%2C+Cockeysville%2C+MD+21030!5e0!3m2!1sen!2sus!4v1491508088946"
+                                        allowfullscreen="" width="800" height="450" frameborder="0"
+                                        data-dashlane-frameid="738"></iframe>
+                                </div>
+                                <div class="cell small-12 large-4">
+                                    <h2 class="vertical-margin-1">Anisa Mirza, M.D.</h2>
+                                    <p> 118 Shawan Road<br>
+                                        Suite 20<br>
+                                        Cockeysville, MD 21030
+                                        <strong>Phone:</strong> <a href="tel:410-469-4981">410-469-4981</a><br>
+                                        <!--<strong>Fax:</strong> 443-426-1818<br>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- </article>
     </section>
-</section>
+</section> -->
