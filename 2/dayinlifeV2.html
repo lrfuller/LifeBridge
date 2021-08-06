@@ -1,0 +1,222 @@
+<style>
+    /* CSS code to style the picture container and images */
+    #slideshow {
+        width: 90%;
+        max-width: 600px;
+        /* height: 338px; */
+        text-align: center;
+        margin: 1em auto;
+        position: relative;
+    }
+
+    #slideshow img {
+        /* width: 100%; */
+        /* max-width: 600px; */
+        /* height: 100%; */
+        border-radius: 5px;
+    }
+
+    .arrows {
+        width: 48px;
+        height: 48px;
+        border-color: #000;
+        position: absolute;
+        top: 50%;
+        margin-top: -31px;
+        z-index: 2;
+    }
+
+    .prev {
+        border-bottom: 6px solid;
+        border-left: 6px solid;
+        transform: rotate(45deg);
+        left: 15px;
+        opacity: 60%;
+    }
+
+    .next {
+        border-bottom: 6px solid;
+        border-left: 6px solid;
+        transform: rotate(-135deg);
+        right: 15px;
+        opacity: 60%;
+    }
+
+
+
+    /* Style to fade */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+    #caption {
+        margin-top: 0;
+        font: 12px Tahoma, Verdana, Sans-serif;
+    }
+</style>
+<!-- HTML to display the pictures -->
+<div id="slideshow">
+    <div style="position: absolute; width: 70px; height: 95%; cursor: pointer;" onclick="prevImg(true)">
+        <div class="arrows prev"></div>
+    </div>
+
+    <div style="position: absolute; width: 70px; height: 95%; right:0px; cursor: pointer;" onclick="nextImg(true)">
+        <div class="arrows next"></div>
+    </div>
+
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Atrium%201.jpg">
+        <p id="caption">Hospital Atrium</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/PICU.jpg">
+        <p id="caption">Pediatric Inpatient Unit</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Hall%201.jpg">
+        <p id="caption">Pediatric Inpatient Unit</p>
+    </div>
+
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20Room.jpg">
+        <p id="caption">Pediatric Inpatient Unit</p>
+    </div>
+
+    <div class="slide fade">
+        <img alt=""
+            src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20Residents%20Rounding%205.jpg">
+        <p id="caption">Inpatient Rounds</p>
+    </div>
+    <div class="slide fade">
+        <img alt=""
+            src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20Residents%20Rounding%207.jpg">
+        <p id="caption">Inpatient Rounds</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/PlayRoom%201.jpg">
+        <p id="caption">Child Life Playroom</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/PlayRoom%202.jpg">
+        <p id="caption">Child Life Playroom</p>
+    </div>
+    <div class="slide fade">
+        <img alt=""
+            src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20Residents%20Rounding%205.jpg">
+        <p id="caption">Pediatric Call Room</p>
+    </div>
+    <div class="slide fade">
+        <img alt=""
+            src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20Residents%20Conference.jpg">
+        <p id="caption">Pediatric Resident Lounge</p>
+    </div>
+
+
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/CDC%202.jpg">
+        <p id="caption">Children's Diagnostic Center</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20ER7%201.jpg">
+        <p id="caption">Pediatric Emergency Department</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Peds%20ER7%203.jpg">
+        <p id="caption">Pediatric Emergency Department</p>
+    </div>
+    <div class="slide fade">
+        <img alt=""
+            src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Greenspring%20Pediatrics%201.jpg">
+        <p id="caption">Greenspring Pediatrics – Continuity Clinic</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/Sinai%20Cafeteria%201.jpg">
+        <p id="caption">Hospital Cafeteria</p>
+    </div>
+    <div class="slide fade">
+        <img alt="" src="/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/SubWay%202.jpg">
+        <p id="caption">Subway</p>
+    </div>
+
+
+
+
+
+
+</div>
+<!-- End slideshow -->
+<script>
+    //Number of seconds for each picture to show.
+    var pictime = 5;
+    const slides = document.querySelectorAll(".slide")
+    var slideNum = -1;
+
+    function nextImg(bool) {
+        // if event sent from arrows, reset interval
+        if (bool) {
+            clearInterval(stimer)
+            stimer = setInterval('nextImg(false)', pictime * 1000);
+        }
+
+        slideNum++;
+        //if index bigger than # of slides sets back to first slide
+        if (slideNum >= slides.length) {
+            slideNum = 0;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            slides[i].setAttribute("aria-hidden", "true");
+        }
+        slides[slideNum].style.display = "block";
+        slides[slideNum].setAttribute("aria-hidden", "false");
+    }
+
+    function prevImg(bool) {
+        // if event sent from arrows, reset interval
+        if (bool) {
+            clearInterval(stimer)
+            stimer = setInterval('nextImg(false)', pictime * 1000);
+        }
+
+        slideNum--;
+        //if index less than 0 sets moves to last slide
+        if (slideNum <= -1) {
+            slideNum = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            slides[i].setAttribute("aria-hidden", "true");
+        }
+        slides[slideNum].style.display = "block";
+        slides[slideNum].setAttribute("aria-hidden", "false");
+
+    }
+
+    var stimer = setInterval('nextImg(false)', pictime * 1000);
+    nextImg();
+
+</script>

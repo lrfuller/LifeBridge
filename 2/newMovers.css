@@ -1,0 +1,299 @@
+/*Custom Styles */
+
+.appointment {
+    font: normal;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 26px;
+    padding: 1.5%;
+    text-align: left;
+}
+
+.matt {
+    font: normal;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.W75 {
+    width: 65%;
+}
+
+.W25 {
+    width: 30%;
+    background-color: #ece9e8;
+}
+
+.W25_nobackground {
+    width: 25%;
+}
+
+.W25_nobackground image {
+    /* width: 225px; */
+    width: 95%;
+    max-width: 500px;
+}
+
+.W40 {
+    width: 39%;
+}
+
+.W60 {
+    width: 59%;
+}
+
+.quotebackground {
+    width: 100%;
+    height: 175px;
+    background-color: #ece9e8;
+}
+
+.CTAbanner {
+    background-color: #4dbeb5;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: -1.7%;
+    clear: both;
+    text-transform: uppercase;
+    padding: 1%;
+    z-index: 1;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+/* Clear floats after the columns */
+
+.containerplain {
+    display: table;
+    clear: both;
+}
+
+.infosectionleft {
+    float: left;
+    padding: .5%;
+    margin: .5%;
+}
+
+.infosectionright {
+    float: right;
+    padding: .5%;
+    margin: .5%;
+}
+
+/* Blue Button */
+
+.GMEbutton {
+    background-color: #0075bc;
+    border: none;
+    border-radius: 4px;
+    clear: right;
+    color: white;
+    font-weight: 550;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.GMEbutton:hover {
+    background-color: #094579;
+    /* lighter navy lbh*/
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.24);
+}
+
+.mattphoto {
+    height: 150px !important;
+    /*width: 108px !important;*/
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.michaelphoto {
+    display: block;
+    max-height: 350px !important;
+    max-width: 250px !important;
+    width: auto;
+    height: auto;
+}
+
+.figure_image {
+    display: block;
+    max-height: 720px !important;
+    max-width: 480px !important;
+    width: auto;
+    height: auto;
+}
+
+.qlbuilding {
+    display: block;
+    max-height: 720px !important;
+    max-width: 720px !important;
+    /*max-width: 602px !important;*/
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+/* removes blockquote border */
+
+blockquote {
+    border-left: none !important;
+}
+
+.logo_width_1 {
+    width: 107px;
+}
+
+.logo_width_2 {
+    width: 142px;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    .quotebackground {
+        width: 100%;
+        height: 100%;
+        background-color: #ece9e8;
+        padding-bottom: 10px;
+    }
+    .matt {
+        font: normal;
+        font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+        font-weight: bold;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    /* removes blockquote border */
+    blockquote {
+        border-left: none !important;
+    }
+    /* End Custom Styles */
+    /* TABLE STYLES */
+    /* 
+  Generic Styling, for Desktops/Laptops 
+  */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+        background: #fff;
+    }
+    th {
+        background: #fff;
+        color: white;
+        font-weight: bold;
+    }
+    td, th {
+        padding: 0px !important;
+        /*  border: 1px solid #ccc; */
+        text-align: left;
+    }
+}
+
+/* 
+  Max width before this PARTICULAR table gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #fff;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    /* removes blockquote border */
+    blockquote {
+        border-left: none !important;
+    }
+    /*
+   Label the data
+   */
+    /*td:nth-of-type(1):before { content: "First Name"; }
+   td:nth-of-type(2):before { content: "Last Name"; }
+   td:nth-of-type(3):before { content: "Job Title"; }
+   td:nth-of-type(4):before { content: "Favorite Color"; }
+   td:nth-of-type(5):before { content: "Wars of Trek?"; }
+   td:nth-of-type(6):before { content: "Secret Alias"; }
+   td:nth-of-type(7):before { content: "Date of Birth"; }
+   td:nth-of-type(8):before { content: "Dream Vacation City"; }
+   td:nth-of-type(9):before { content: "GPA"; }
+   td:nth-of-type(10):before { content: "Arbitrary Data"; }*/
+}
+
+/* END TABLE STYLE */
+
+@media screen and (max-width: 800px) {
+    .CTAbanner {
+        font-size: 1.4rem;
+        position: sticky;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .GMEbutton {
+        /*margin-left: 25%;*/
+        /*margin-right:25%;*/
+    }
+    .infosectionleft {
+        width: 100%;
+        /* margin: 3% 7%;*/
+        /*padding: 2%;*/
+    }
+    .infosectionright {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+    /* removes blockquote border */
+    blockquote {
+        border-left: none !important;
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .W25_nobackground image {
+        width: 225px;
+    }
+    .logo_width_1 {
+        width: 37%
+    }
+    .logo_width_2 {
+        width: 50%;
+    }
+}

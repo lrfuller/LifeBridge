@@ -1,0 +1,112 @@
+<style>
+    /* CSS code to style the picture container and images */
+    #slideshow {
+        /* Height of box should roughly match image heights */
+        width: 100%;
+        height: 338px;
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    /* Size each image to fit container height */
+    #slideshow img {
+        width: 100%;
+        max-width: 600px;
+        /* height: 100%; */
+        border-radius: 5px;
+    }
+
+    /* Style to fadein */
+    .fadein {
+        opacity: 1;
+        transition: all ease-in .25s;
+        -webkit-transition: all ease-in .25s;
+    }
+
+    /* Style to fadeout */
+    .fadeout {
+        opacity: 0;
+        transition: all ease-out 0.25s;
+        -webkit-transition: all ease-out 0.25s;
+    }
+
+    #caption {
+        margin-top: 0;
+        font: 12px Tahoma, Verdana, Sans-serif;
+    }
+</style>
+<!-- HTML to display the pictures -->
+<div id="slideshow">
+    <img id="slideimg" alt="">
+    <p id="caption">&nbsp;</p>
+</div>
+<!-- End slideshow -->
+<script>
+    //Number of seconds for each picture to show.
+    var pictime = 5;
+    //Image subfolder name (or "" if none)/
+    var folder = "https://lifebridgehealth.org/Uploads/Public/Images/Sinai_Surgical_Residency/PhotoGallery/2021/"
+    //Image filenames and captions (code syntax must be a shown).
+    var images = [
+        ["Atrium%201.jpg", "Hospital Atrium"],
+        ["PICU.jpg", "Pediatric Inpatient Unit"],
+        ["Hall%201.jpg", "Pediatric Inpatient Unit"],
+        ["Peds%20Room.jpg", "Pediatric Inpatient Unit"],
+        ["PlayRoom%201.jpg", "Inpatient Rounds"],
+        ["PlayRoom%202.jpg", "Child Life Playroom"],
+        ["Peds%20Residents%20Rounding%205.jpg", "Pediatric Call Room"],
+        ["Peds%20Residents%20Conference.jpg", "Pediatric Resident Lounge"],
+        ["CDC%202.jpg", "Children's Diagnostic Center"],
+        ["Peds%20ER7%201.jpg", "Pediatric Emergency Department"],
+        ["Peds%20ER7%203.jpg", "Greenspring Pediatrics – Continuity Clinic"],
+        ["Greenspring%20Pediatrics%201.jpg", "Hospital Cafeteria"],
+        ["SubWay%202.jpg", "Subway"],
+    ];
+
+    // You don't really need to change anything below here unless you want to changing styling or something.
+
+    //Initialize subscript variable (start at -1 to start slideshow at first slide).
+    var subscript = -1
+    //Preload images
+    var temp = new Image()
+    for (i in images) {
+        try {
+            temp.src = images[i][0]
+        } catch (e) {
+            //Do nothing (for bad IE .length)
+        }
+    }
+
+    //Fade out the current image, then pause.
+    function nextimg() {
+        var imgtag = document.getElementById('slideimg');
+        //Apply the fadeout style class.
+        imgtag.className = 'fadeout';
+        //wait 500ms, then get the new image.
+        setTimeout('newimg()', 250);
+    }
+    //Calculate and show the next image.
+    function newimg() {
+        //Calculate next image subscript number.
+        subscript = (subscript >= images.length - 1) ? 0 : subscript + 1;
+        //Set next image filename appropriate image name in array.
+        try {
+            var imagefile = images[subscript][0];
+            //This unfortunate try...catch mainly for old IE versions.
+        } catch (e) {
+            subscript = 0
+            var imagefile = images[subscript][0];
+        }
+        //Set the image tag's src= and classname= attributes.
+        var imgtag = document.getElementById('slideimg');
+        imgtag.src = folder + "/" + imagefile;
+        document.getElementById('caption').innerHTML = images[subscript][1];
+        imgtag.className = 'fadein';
+    }
+    //Make sure everything is loaded before starting timer.
+    window.onload = function () {
+        newimg()
+        var stimer = setInterval('nextimg()', pictime * 1000);
+
+    }
+</script>
