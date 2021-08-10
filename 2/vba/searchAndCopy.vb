@@ -24,3 +24,19 @@ End Sub
 
 
 
+Sub BookAdd()
+Dim sh1 As Worksheet, sh2 As Worksheet, rng As Range
+Dim counter As Long
+
+Set sh1 = ActiveSheet
+counter = 2
+ 
+
+    For Each rng In sh1.Range("D2:D2049")
+        If rng.Value <> "" Then
+            sh1.Range("C2").Offset(counter - 2).Value = "Book Now"
+        End If
+        counter = counter + 1
+    Next
+
+End Sub
