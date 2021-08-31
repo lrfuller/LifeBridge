@@ -11,6 +11,7 @@
         font-family: 'Philosopher', sans-serif !important;
         font-weight: 700;
         font-size: 1.2rem;
+        z-index: 1;
     }
 
     .treatments_div:hover {
@@ -83,26 +84,67 @@
         z-index: 1;
     }
 
+    .mobile-order-2 {
+        order: 2;
+    }
+
+    .mobile-order-1 {
+        order: 1;
+    }
+
+    .top_ddl {
+        position: absolute;
+        top: -236px;
+        width: 110%;
+        height: 235px;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+
     @media screen and (min-width: 743px) {
         .right_ddl {
             display: none;
         }
 
     }
+
+    @media screen and (min-width: 852px) {
+
+        .mobile-order-2,
+        .mobile-order-1 {
+            order: unset;
+        }
+    }
+
+    @media screen and (min-width:852px) and (max-width: 1266px) {
+        .right_ddl_2 {
+            display: block;
+            position: absolute;
+            right: -24px;
+            width: 23px;
+            height: 106%;
+            background-color: white;
+            z-index: 1;
+        }
+    }
 </style>
 <div class="grid-x">
-    <div class="small-11 medium-11" style="margin: auto;"><iframe src="https://player.vimeo.com/video/577587348"
-            width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""
-            data-gtm-yt-inspected-1_25="true" data-gtm-yt-inspected-2333681_11="true" data-ready="true"
-            style="width: 100%;"></iframe>
+    <div class="small-11 medium-11 mobile-order-1" style="margin-left:auto; margin-right: auto;z-index:2">
+        <iframe src="https://player.vimeo.com/video/577587348" width="640" height="360" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" data-gtm-yt-inspected-1_25="true"
+            data-gtm-yt-inspected-2333681_11="true" data-ready="true" style="width: 100%;"></iframe>
     </div>
 </div>
 
 <div class="grid-x" style="margin-bottom: 100px; position:relative">
-    <!-- right white color, removes the extra spacing on the right of the ddl items -->
+    <!-- white padding for removing the ddl from view -->
     <div class="right_ddl"></div>
-    <div class="small-11 medium-9" style="margin: auto;max-width: 620px;">
-        <div style="position: relative;cursor: pointer;z-index:1;margin-top: 80px;"
+    <div class="small-11 medium-9 mobile-order-2"
+        style="margin: auto;max-width: 620px; position:relative; margin-top:80px">
+        <!-- white padding for removing the ddl from view -->
+        <div class="right_ddl_2"></div>
+        <div class="top_ddl"></div>
+        <div style="position: relative;cursor: pointer;z-index:1;"
             onclick="toggleIcon('plus_1', 'minus_1', 'set_1','arrow_tab_spacing_4')">
             <div class="treatments_div">
                 <div style="padding: 20px 40px 20px 20px; color: white">Carrol Hospital / Carroll Hospital Group Go-Live
@@ -281,6 +323,8 @@
 
 
 <script>
+    var screensize = window.screen.width;
+
     function toggleIcon(p, m, d, v,) {
         var plus = document.getElementById(p);
         var minus = document.getElementById(m);
@@ -300,8 +344,18 @@
     function slideDownShow(display, val) {
         clearTimeouts();
         display.style.display = "block";
+        var slideMargin = "";
+
+        if(screensize > 542){
+            slideMargin = "-79px 10px 0px 10px";
+        }else if(screensize >= 360){
+            slideMargin = "-90px 10px 0px 10px";
+        }else{
+            slideMargin = "-100px 10px 0px 10px";
+        } 
+
         for (let i = 0; i < val.length; i++) {
-            val[i].style.margin = "-75px 10px 0px 10px";
+            val[i].style.margin = slideMargin;
             setTimeout(function () {
                 for (let i = 0; i < val.length; i++) {
                     val[i].style.margin = "-15px 10px 0px 10px";
@@ -312,8 +366,18 @@
 
     function slideUpHide(display, val) {
         clearTimeouts();
+        var slideMargin = "";
+        
+        if(screensize > 542){
+            slideMargin = "-79px 10px 0px 10px";
+        }else if(screensize >= 360){
+            slideMargin = "-90px 10px 0px 10px";
+        }else{
+            slideMargin = "-100px 10px 0px 10px";
+        } 
+
         for (let i = 0; i < val.length; i++) {
-            val[i].style.margin = "-75px 10px 0px 10px";
+            val[i].style.margin = slideMargin;
         }
         var time = 2000;
         if (display.id === "conditions_set") { //special case for first group, has too many values, so 3 seconds works better
@@ -331,4 +395,8 @@
             window.clearTimeout(id);
         }
     }
+
+    window.addEventListener('resize', function (event) {
+        screensize = window.screen.width
+    }, true);
 </script>
