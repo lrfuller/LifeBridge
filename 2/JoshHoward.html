@@ -1,0 +1,498 @@
+<style>
+    @charset "utf-8";
+    /* CSS Document */
+
+    .onv-open-btn:before {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+
+    .hero__textbox {
+        background-color: #cc1a1aa1;
+        padding: 1.5rem 2rem;
+    }
+
+    /* @media screen and (max-width: 63.9375em) { */
+    .hero__textbox {
+        background-color: #cc1a1aa1;
+        border-bottom-left-radius: 20px;
+        outline: 4px solid rgba(254, 254, 254, 0.4);
+        position: relative;
+        top: -26px;
+        width: 100%;
+    }
+
+    /* } */
+
+    /* Josh H Custom CSS */
+
+    .joshh_main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .joshh_form {
+        background-color: rgb(50, 115, 220);
+        position: relative;
+        float: right;
+        width: 50%;
+        height: 100%;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin-top: -150px;
+
+    }
+
+    .joshh_form p {
+        visibility: hidden;
+
+
+    }
+
+    .joshh_about {
+        width: 50%;
+        float: left;
+        padding: 10px;
+
+    }
+
+    .joshh_section {
+        position: relative;
+        padding: 20px;
+        display: block;
+
+    }
+
+    .joshh_section_quote {
+        padding: 20px;
+        display: block;
+
+    }
+
+    .joshh_right {
+        width: 60%;
+        float: right;
+        padding: 10px;
+
+
+    }
+
+    .joshh_left {
+        background-color: rgb(50, 115, 220);
+        width: 40%;
+        float: left;
+        padding: 10px;
+    }
+
+    .joshh_logo {
+        witdh: 150px;
+        height: 100%;
+
+    }
+
+    .joshh_form2 {
+        background-color: rgb(50, 115, 220);
+        position: relative;
+
+    }
+
+    .hero__image {
+        min-height: 300px !important;
+        height: 300px !important;
+
+    }
+
+    .joshh_button {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 1rem 0;
+        font-family: inherit;
+        padding: 0.85em 1em;
+        -webkit-appearance: none;
+        border: 1px solid transparent;
+        border-radius: 0;
+        transition: background-color 0.25s ease-out, color 0.25s ease-out;
+        font-size: 0.9rem;
+        line-height: 1;
+        text-align: center;
+        cursor: pointer;
+        background-color: #00BCE3;
+        color: #fff !important;
+        text-decoration: none !important;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 1em 1.5em;
+        text-transform: uppercase;
+
+    }
+
+    .joshh_button a:link,
+    .joshh_button a:visited {
+        color: #fff;
+        text-decoration: none;
+
+    }
+
+    .joshh_white {
+        color: #fff;
+    }
+
+    .joshh_white a:link,
+    .josh_white a:visited {
+        color: #fff;
+
+    }
+
+    .formFieldWrapper {
+        padding: 10px !important;
+        display: inline-block;
+    }
+
+    .formCPScript {
+        width: 40%;
+    }
+
+    .sidekick {
+        position: relative;
+        padding-left: 1em;
+        border-left: 0.2em solid #039be5;
+        font-family: 'Roboto', serif;
+        font-size: 2.4em;
+        line-height: 1.5em;
+        font-weight: 100;
+        display: inline-flex;
+    }
+
+    .sidekick:before,
+    .sidekick:after {
+        font-family: Calibri;
+        color: #039be5;
+        font-size: 34px;
+    }
+
+    .sidekick:before {
+        content: '\201e'
+    }
+
+    .sidekick:after {
+        content: '\201c';
+    }
+
+    .sidekick cite {
+        font-size: 50%;
+        text-align: center;
+        top: 50%
+    }
+
+    .sidekick cite:before {
+        content: ' \2015 '
+    }
+
+    blockquote {
+        padding: 0.5625rem 1.25rem 0 1.1875rem !important;
+    }
+
+    /* Live Chat style rules */
+
+    .livechattxt {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+
+    }
+
+    .onv-open-btn {
+        display: inline-block;
+        text-align: center;
+        /* width: 663px !important; */
+        height: 146px !important;
+        border-radius: 25px;
+        background: #344861;
+        border: solid 2px #7f8891;
+        color: #FFFFFF;
+        font-weight: bold;
+        font: 111px/111px 'Material Icons' !important;
+
+        position: absolute;
+        z-index: 3;
+        bottom: 50px;
+        right: 0px;
+        width: 187px !important;
+    }
+
+    .fas {
+        color: white;
+    }
+
+    .livechat {
+        background-color: #edacab;
+        border-style: solid;
+        border-color: #f4cdcc;
+        padding: 10px;
+
+    }
+
+    @media screen and (max-width: 500px) {
+
+
+        .onv-module-chat {
+            width: 100% !important;
+            height: 100% !important;
+
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .onv-open-btn {
+            display: inline-block;
+            text-align: center;
+            /* width: 663px !important; */
+            height: 73px !important;
+            border-radius: 25px;
+            background: #344861;
+            border: solid 2px #7f8891;
+            color: #FFFFFF;
+            font-weight: bold;
+            font: 111px/111px 'Material Icons' !important;
+            position: absolute;
+            z-index: 3;
+            bottom: 50px;
+            right: 17px;
+            width: 86px !important;
+            padding: 10px;
+        }
+    }
+
+    @media screen and (min-width: 750px) {
+
+        .livechat {
+            visibility: hidden;
+        }
+
+        .livechattxt {
+            visibility: hidden;
+        }
+
+        .livechatbutton {
+            visibility: hidden;
+        }
+
+        .hidechatbutton {
+            visibility: visible;
+        }
+
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .joshh_right {
+            width: 100%;
+            float: none;
+            padding: 10px;
+
+
+
+        }
+
+        .joshh_left {
+            background-color: rgb(50, 115, 220);
+            width: 100%;
+            float: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        .joshh_form {
+            background-color: rgb(50, 115, 220);
+            position: relative;
+            float: none;
+            width: 100%;
+            height: 640px;
+            height: 100%;
+            display: table-cell;
+
+        }
+
+        .joshh_about {
+            width: 100%;
+            float: none;
+            padding: 10px;
+
+        }
+
+        .hero__image {
+            width: 100% !important;
+        }
+
+        .sidekick {
+            position: relative;
+            padding-left: 1em;
+            border-left: 0.2em solid #039be5;
+            font-family: 'Roboto', serif;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            font-weight: 100;
+            display: inline-flex;
+        }
+
+        .sidekick:before,
+        .sidekick:after {
+            font-family: Calibri;
+            color: #039be5;
+            font-size: 14px;
+        }
+    }
+</style>
+<div class="joshh_main">
+    <div class="joshh_hero">
+        <img src="/Uploads/Public/Images/joshh/banner_1440x300.jpg" width="100%" height="300px"
+            alt="place holder banner" class="hero__image is-animating" style="">
+    </div>
+    <section class="joshh_section">
+        <div class="joshh_about">
+            <img src="https://www.lifebridgehealth.org/Uploads/assets/img/svglogos/Logo.svg">
+            <h2>Expert Orthopedic Care - No Bones About It</h2>
+            <br>
+            <p>LifeBridge Health’s Rubin Institute for Advanced Orthopedics (RIAO), which recently welcomed Carroll
+                Health Group Orthopaedics, is home to some of the world's most renowned orthopedic surgeons who provide
+                ultramodern orthopedic treatment for both children and adults. The Rubin Institute offers services at
+                the following hospitals, plus several convenient community-based locations near you:</p>
+            <ul type="circle">
+                <li><a href="">Sinai Hospital</a></li>
+                <li><a href="">Northwest Hosptial</a></li>
+                <li><a href="">Carroll Hospital</a></li>
+            </ul>
+            <a href="about.html" class="joshh_button">Start Your Journey to Pain-Free Living</a>
+        </div>
+        <div class="joshh_form">
+            <!-- Form -->
+            [cp:scripting key='Form' dataId='ea8d920c-5dcc-4567-9ee8-7eeeeece8e4b' group='cpsys_DefaultGroup'
+            format='&lt;div class="form-container"&gt;{0}&lt;/div&gt;' /]
+            <!-- End Form -->
+        </div>
+    </section>
+    <section class="joshh_section">
+        <blockquote class="sidekick">
+            The process is so easy, and we are glad our son could get the follow-up care he needed even when we couldn't
+            see the doctor in person. <cite> Patient from the Rubin Institute of Advanced Orthopedics</cite>
+        </blockquote>
+    </section>
+    <section class="joshh_section">
+        <h1>Services</h1>
+        <p>LifeBridge Health’s orthopedic surgeons are devoted to the prevention, diagnosis and treatment of disorders
+            of the bones, joints, ligaments, tendons and muscles. Our bone, joint and pain doctors specialize in general
+            orthopedic care, diabetic limb preservation, foot and ankle surgery, hand and upper extremity surgery, joint
+            preservation and replacement (including total and partial hip and knee replacement), sports medicine care
+            and more; and can effectively treat conditions, such as: </p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><strong>Arthritis and Rheumatoid Arthritis</strong> -- swelling and tenderness of one or
+                                more of your joints&nbsp;</li>
+                            <li><strong>Bone Deformities and Infections</strong>&nbsp;</li>
+                            <li><strong>Carpal Tunnel and Tarsal Tunnel</strong> -- caused by increased pressure on a
+                                nerve entering the hand (carpal) or foot (tarsal).&nbsp;</li>
+                            <li><strong> Charcot Foot</strong> -- condition causing weakening of the bones in the foot
+                                that can occur in people who have significant nerve damage&nbsp;</li>
+                            <li><strong>Chronic Knee Joint Pain</strong>&nbsp;</li>
+                            <li><strong>Chronic Orthopedic Hip Pain</strong>&nbsp;&nbsp;</li>
+                            <li><strong>Diabetic and Non-Healing Wounds</strong>&nbsp;</li>
+                            <li><strong>Fractures and Dislocations</strong>&nbsp;</li>
+                            <li><strong>General Orthopedic and Musculoskeletal Conditions</strong>&nbsp;</li>
+                            <li><strong>Gout</strong> -- a common and complex form of arthritis&nbsp;</li>
+                            <li><strong>Pseudogout</strong> -- gout-like attacks, characterized by acute localized pain
+                                and swelling, that occur in patients with calcium crystal deposits in the joints&nbsp;
+                            </li>
+                            <li><strong>Joint Pain and Injuries</strong>&nbsp;</li>
+                        </ul>
+                        <br>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Limb Length Discrepancy and Deformity</strong></li>
+                            <li><strong>Lymphedema </strong>-- Swelling in one arm or leg&nbsp;</li>
+                            <li><strong>Neuropathic Ulcers </strong>-- form because of peripheral neuropathy, typically
+                                in diabetic patients</li>
+                            <li><strong>Orthopedic Trauma</strong> -- any severe injury to the bones, joints, or soft
+                                tissue</li>
+                            <li><strong>Orthopedic Tumors</strong> -- an abnormal growth of cells within the bone&nbsp;
+                            </li>
+                            <li><strong>Osteoarthritis</strong> -- occurs when the protective cartilage that cushions
+                                the ends of your bones wears down over time. Although osteoarthritis can damage any
+                                joint, the disorder most commonly affects joints in your hands, knees, hips and spine
+                            </li>
+                            <li><strong>Osteomyelitis</strong> -- a bone infection that can cause inflammation and
+                                swelling the bone</li>
+                            <li><strong>Osteonecrosis</strong> -- a disease caused by reduced blood flow to bones in the
+                                joints</li>
+                            <li><strong>Peripheral Vascular Disease (PVD)</strong> -- a blood circulation disorder that
+                                causes the blood vessels outside of your heart and brain to narrow, block or spasm. PVD
+                                often causes pain and fatigue in the legs&nbsp;</li>
+                            <li><strong>Sports Injuries&nbsp;</strong></li>
+                            <li><strong>Scoliosis</strong> -- sideways curvature of the spine</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="joshh_section">
+        <blockquote class="sidekick">
+            "My shoulder is perfect today; I have no limitations whatsoever," he reports. "I was told it would be a full
+            year before I'd be back 100 percent, but , as far as i'm concerned, I'm 100 percent now, and I have been for
+            some time. <cite> Patient from Carroll Health Group Orthopedics</cite>
+        </blockquote>
+        <a href="about.html" class="joshh_button">Start Your Journey to Pain-Free Living</a>
+    </section>
+    <section class="joshh_section">
+        <div class="joshh_right">
+            <h1>Immediate appointments are available in most areas.</h1>
+            <p>Our practices are open, safe, and ready to serve patients. We adhere to all state guidelines to ensure
+                patient safety and quality care and offer safe in-office and telemedicine consultations. If you have a
+                condition of or injury to a bone or joint that is causing you constant discomfort and requires pain
+                treatment, physical therapy or surgery, do not spend another day in pain.</p>
+            <br>
+            <br>
+            <p>For more information about LifeBridge Health’s Rubin Institute for Advanced Orthopedics or to find an
+                orthopedic specialist near you, complete the form below. Or call:</p>
+            <ul type="circle">
+                <li>Rubin Institute for Advanced Orthopedics - <a href="tel:4436581401">(443) 658 - 1401</a></li>
+                <li>Carroll Health Group Orthopedics, Carroll County - <a href="tel:6673675532">(667) 367 - 5532</a>
+                </li>
+            </ul>
+        </div>
+        <div class="joshh_left">
+            <h1 class="joshh_white">OUR PARTNERS</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="joshh_white">Koman Orthopedics &amp; Sports Medicine<br>
+                116 WestministerPike, Suite 100<br>
+                Reisterstown, MD 21136<br>
+                <a href="tel:4104297322">410-429-7322</a>
+                <br>
+                <br>
+                <br>
+                Orthopedic Associates of MD<br>
+                Orthopaedic Associates of Cental Maryland<br>
+                910 Frederick Road<br>
+                Catonsville, MD 21228<br>
+                <a href="tel:4437859573">443-785-9573</a>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+    <!-- <center><span class="livechattxt"><em class="fas fa-comment"></em>Live Chat w/ Us!</span></center> -->
+</div>
+<a class="onv-open-btn fa" data-onv-open-label="Live Chat" data-onv-close-label="Close
+    Chat"></a>
+<div id="onvida"></div>

@@ -1,0 +1,334 @@
+<style>
+    .blue {
+        color: #0f2c52
+    }
+
+    .treatments_div {
+        position: absolute;
+        bottom: 0px;
+        background-color: #0f2c52;
+        width: 100%;
+        font-family: 'Philosopher', sans-serif !important;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .treatments_div:hover {
+        background-color: #0f2c52f5;
+    }
+
+    .arrow_tab_spacing_4 {
+        position: relative;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 0;
+    }
+
+    .arrow_tabs_1,
+    .arrow_tabs_2,
+    .arrow_tabs_3 {
+        position: relative;
+        bottom: 0px;
+        background-color: #f0f0f0;
+        width: 100%;
+        margin: 0px 0px 0px 10px;
+        /* cursor: pointer; */
+    }
+
+    .arrow_tabs_2 {
+        margin: 0px 0px 0px 20px;
+        width: 98.5%;
+    }
+
+    .arrow_tabs_3 {
+        margin: 0px 0px 0px 30px;
+        width: 96.8%
+    }
+
+    /* .arrow_tabs_1:hover {
+        background-color: #e3e2e2;
+    } */
+
+    .arrow_text_1 {
+        padding: 15px;
+        color: #0f2c52;
+        margin-right: 30px;
+        font-family: 'Philosopher', sans-serif !important;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .arrow_text_2 {
+        padding: 15px;
+        color: #0f2c52;
+        margin-right: 30px;
+        font-family: 'Philosopher', sans-serif !important;
+    }
+
+    .arrow_text_2 a:before {
+        content: "\2022";
+        font-size: 22px;
+        display: inline-block;
+        line-height: 0px;
+        margin-right: 5px;
+    }
+
+    .right_ddl {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 23px;
+        height: 106%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    @media screen and (min-width: 743px) {
+        .right_ddl {
+            display: none;
+        }
+
+    }
+</style>
+<div class="grid-x">
+    <div class="small-11 medium-11" style="margin: auto;"><iframe src="https://player.vimeo.com/video/577587348"
+            width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""
+            data-gtm-yt-inspected-1_25="true" data-gtm-yt-inspected-2333681_11="true" data-ready="true"
+            style="width: 100%;"></iframe>
+    </div>
+</div>
+
+<div class="grid-x" style="margin-bottom: 100px; position:relative">
+    <!-- right white color, removes the extra spacing on the right of the ddl items -->
+    <div class="right_ddl"></div>
+    <div class="small-11 medium-9" style="margin: auto;max-width: 620px;">
+        <div style="position: relative;cursor: pointer;z-index:1;margin-top: 80px;"
+            onclick="toggleIcon('plus_1', 'minus_1', 'set_1','arrow_tab_spacing_4')">
+            <div class="treatments_div">
+                <div style="padding: 20px 40px 20px 20px; color: white">Carrol Hospital / Carroll Hospital Group Go-Live
+                    Resources
+                </div>
+                <div id="plus_1"
+                    style="position: absolute;color: white;right: 20px;bottom: 20px;display: block;font-size: 20px;">
+                    +
+                </div>
+                <div id="minus_1"
+                    style="position: absolute;color: white;right: 20px;bottom: 27px;font-size: 24px;display: none;">
+                    _
+                </div>
+            </div>
+        </div>
+        <div id="set_1" style="display: none">
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_1">
+                    <div class="arrow_text_1">Communications</div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Timeline Visual for MicroSite - CH_CHG.jpg">Project
+                            Timeline</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Flyer for CH and CHG - Coming Soon messaging (Oct 2021).pdf">Flyer
+                            Coming Soon! UKG Dimensions </a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Team Member FAQs - About The Project.docx">FAQs
+                            – About the Project</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2" style="font-weight: 700;">Leader Toolkit</div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Leader Toolkit - Leading Change Overview (CH_CHG).pdf">Leading
+                            Change Overview</a></div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_1">
+                    <div class="arrow_text_1">Training and Resources</div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/API to UKG Terminology Crosswalk.pdf">Crosswalk
+                            Terminology: API -> UKG Dimensions</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2" style="font-weight: 700;">Leading Change Lessons</div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="https://www.healthstream.com/HSAPP/CoursePreEnrollment?courseId=78de545b-235b-eb11-80dd-005056b16236&courseVersion=4"
+                            target="_blank">Change Leadership Training – Introduction to the Change Curve</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="https://www.healthstream.com/HSAPP/CoursePreEnrollment?courseId=ad95c7f2-5e71-eb11-80de-005056b150d4&courseVersion=1"
+                            target="_blank">Change Leadership Training – Leader as Change Advocate</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="https://www.healthstream.com/HSAPP/CoursePreEnrollment?courseId=8d8dc6a9-5a8e-eb11-80e0-005056b13d3f&courseVersion=2"
+                            target="_blank">Change Leadership Training – Leader as Coach</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="https://www.healthstream.com/HSAPP/CoursePreEnrollment?courseId=888309a2-2571-eb11-80df-005056b17c18&courseVersion=7"
+                            target="_blank">Change Leadership Training – Leader as Communicator</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="https://www.healthstream.com/HSAPP/CoursePreEnrollment?courseId=32ef5741-5c8e-eb11-80e0-005056b13d3f&courseVersion=3"
+                            target="_blank">Change Leadership Training – Leader as Liaison</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_3">
+                    <div class="arrow_text_2"><a
+                            href="https://www.healthstream.com/HSAPP/CoursePreEnrollment?courseId=5454089e-5b8e-eb11-80e0-005056b13d3f&courseVersion=2"
+                            target="_blank">Change Leadership Training – Leader as Resistance Manager</a></div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_1">
+                    <div class="arrow_text_1">Change Leader Resources &amp; Assessments</div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Change Leader Tool - Communicator (Communication Template).docx">Communications
+                            Template</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Change Leader Tool - Resistance Manager (If This, Then That).pdf">Planning
+                            for Resistance – If This, Then That</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a style="text-decoration: none;cursor: auto;color: black;">Preparing for
+                            Positive Change Template</a></div>
+                </div>
+            </div>
+            <br>
+            <div class="arrow_tab_spacing_4">
+                <div class="arrow_tabs_2">
+                    <div class="arrow_text_2"><a
+                            href="/Uploads/Uploads/Public/Documents/UKG Dimensions/Change Leader Roles - Assessment.xlsx">Change
+                            Leader Roles – Assessment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function toggleIcon(p, m, d, v,) {
+        var plus = document.getElementById(p);
+        var minus = document.getElementById(m);
+        var val = document.getElementsByClassName(v);
+        var display = document.getElementById(d);
+        if (minus.style.display === "none") {
+            plus.style.display = "none";
+            minus.style.display = "block";
+            slideDownShow(display, val);
+        } else {
+            plus.style.display = "block";
+            minus.style.display = "none";
+            slideUpHide(display, val);
+        }
+    }
+
+    function slideDownShow(display, val) {
+        clearTimeouts();
+        display.style.display = "block";
+        for (let i = 0; i < val.length; i++) {
+            val[i].style.margin = "-75px 10px 0px 10px";
+            setTimeout(function () {
+                for (let i = 0; i < val.length; i++) {
+                    val[i].style.margin = "-15px 10px 0px 10px";
+                }
+            }, 1);
+        }
+    }
+
+    function slideUpHide(display, val) {
+        clearTimeouts();
+        for (let i = 0; i < val.length; i++) {
+            val[i].style.margin = "-75px 10px 0px 10px";
+        }
+        var time = 2000;
+        if (display.id === "conditions_set") { //special case for first group, has too many values, so 3 seconds works better
+            time = 3000;
+        }
+        setTimeout(function () {
+            display.style.display = "none"
+        }, time);
+
+    }
+
+    function clearTimeouts() {
+        var id = window.setTimeout(function () { }, 0);
+        while (id--) {
+            window.clearTimeout(id);
+        }
+    }
+</script>
