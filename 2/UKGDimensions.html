@@ -101,6 +101,18 @@
         z-index: 1;
     }
 
+    .margin_727 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 727px) {
+        .margin_727 {
+            margin-left: unset;
+            margin-right: unset;
+        }
+    }
+
     @media screen and (min-width: 743px) {
         .right_ddl {
             display: none;
@@ -137,10 +149,10 @@
 </div>
 
 <div class="grid-x" style="margin-bottom: 100px; position:relative">
-    <!-- white padding for removing the ddl from view -->
-    <div class="right_ddl"></div>
-    <div class="small-11 medium-9 mobile-order-2"
-        style="margin: auto;max-width: 620px; position:relative; margin-top:80px">
+    <div class="right_ddl"></div> <!-- white padding for removing the ddl from view -->
+
+    <div class="small-11 medium-9 mobile-order-2 margin_727"
+        style="max-width: 620px; position:relative; margin-top:80px">
         <!-- white padding for removing the ddl from view -->
         <div class="right_ddl_2"></div>
         <div class="top_ddl"></div>
@@ -319,6 +331,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -346,13 +359,13 @@
         display.style.display = "block";
         var slideMargin = "";
 
-        if(screensize > 542){
+        if (screensize > 542) {
             slideMargin = "-79px 10px 0px 10px";
-        }else if(screensize >= 360){
+        } else if (screensize >= 360) {
             slideMargin = "-90px 10px 0px 10px";
-        }else{
+        } else {
             slideMargin = "-100px 10px 0px 10px";
-        } 
+        }
 
         for (let i = 0; i < val.length; i++) {
             val[i].style.margin = slideMargin;
@@ -367,14 +380,14 @@
     function slideUpHide(display, val) {
         clearTimeouts();
         var slideMargin = "";
-        
-        if(screensize > 542){
+
+        if (screensize > 542) {
             slideMargin = "-79px 10px 0px 10px";
-        }else if(screensize >= 360){
+        } else if (screensize >= 360) {
             slideMargin = "-90px 10px 0px 10px";
-        }else{
+        } else {
             slideMargin = "-100px 10px 0px 10px";
-        } 
+        }
 
         for (let i = 0; i < val.length; i++) {
             val[i].style.margin = slideMargin;
