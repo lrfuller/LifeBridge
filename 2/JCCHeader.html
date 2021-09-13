@@ -1,10 +1,33 @@
 <style>
+    .largeMargin {
+        margin-left: 15px;
+    }
+
     .header-main__sticky {
         height: 163px;
     }
 
     .header-main__sticky.is-stuck {
         height: 120px;
+    }
+
+    @media screen and (min-width: 512px) and (max-width: 1022px) {
+        .largeMargin {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (min-width: 53.25em) {
+        .custom_medium_4 {
+            width: 41.66667%;
+        }
+    }
+
+    @media screen and (min-width: 1022px) {
+        .custom_medium_4 {
+            width: 31.33333% !important;
+        }
     }
 
     @media screen and (max-width: 63.9375em) {
@@ -41,8 +64,8 @@
                     <li><a class="nav-utility__link " href="/Main/epay.aspx">Bill Pay</a></li>
                     <!--<li><a class="nav-utility__link " href="/Main/VolunteerWithLBH.aspx">Volunteer</a></li>-->
                 </ul>
-                <a href="tel:4106019355" class="contact text-center"><em class="icon icon--phone"></em>410-601-WELL
-                    (9355)</a>
+                <!-- <a href="tel:4106019355" class="contact text-center"><em class="icon icon--phone"></em>410-601-WELL
+                    (9355)</a> -->
                 <a href="#" class="nav-utility__expand-tab"><em class="icon icon--chevron-down"></em></a>
             </div>
         </nav>
@@ -75,15 +98,12 @@
             <!-- start .grid-x -->
             <div class="header-main__container grid-x align-vertical">
                 <!-- start .cell -->
-                <div class="cell small-8 medium-4" style="margin-top: 0px;">
+                <div class="cell small-8 custom_medium_4 largeMargin" style="margin-top: 0px;">
                     <a href="https://www.lifebridgehealth.org/JCC/JewishCommunityCenter.aspx">
-                        <h1 class="header-main__title" style="margin-left: -10px;">
-                            <span class="show-for-sr">LifeBridge Health and the JCC</span>
-                            <img class="hide show-for-print"
+                        <h1>
+                            <img
                                 src="https://www.lifebridgehealth.org/Uploads/Public/Images/JCC/logos/LBH_JCC_logo.png">
                         </h1>
-                        <img src="/Uploads/Public/Images/JCC/logos/LivingWell_JCC.png" width="200"
-                            style="margin-left: 4px;">
                     </a>
                 </div>
                 <!-- end .cell -->
@@ -91,54 +111,56 @@
                 <div class="cell medium-12 large-8 grid-x">
                     <!-- start .cell -->
                     <div class="cell medium-12 large-11">
-                        <nav class="nav-main" id="nav-main">
-                            <ul class="nav-main__menu menu large-horizontal vertical dropdown nav-main__links"
+                        <nav class="nav-main" id="nav-main" style="display: none;">
+                            <ul class="nav-main__menu menu large-horizontal vertical nav-main__links accordion-menu"
                                 data-responsive-menu="accordion large-dropdown" data-hover-delay="200"
-                                data-close-on-click-inside="false" data-multi-open="true">
+                                data-close-on-click-inside="false" data-multi-open="true" role="tree"
+                                data-mutate="mrv3nz-responsive-menu" aria-multiselectable="true" data-t="vy8n8z-t">
                                 <!-- start mobile helper nav -->
                                 <!-- end mobile helper nav -->
-                                <li class="nav-main__link"><a href="/virtualhealth" target="_blank"><em
+                                <li class="nav-main__link" role="treeitem"><a href="/virtualhealth" target="_blank"><em
                                             class="icon icon--chevron-right orange"></em>Virtual Health Events</a></li>
-                                <li class="nav-main__link"><a href="http://www.lifebridgehealth.org/virtualhealth "><em
-                                            class="icon icon--chevron-right orange"></em>Sinai Wellness &amp; Education
-                                        Suite</a></li>
-                                <li class="nav-main__link"><a href="#"><em
-                                            class="icon icon--chevron-right orange"></em>Virtual Health&nbsp;Library
-                                    </a></li>
-                                <li class="nav-main__link"><a
+                                <!--<li class="nav-main__link" role="treeitem"><a href="http://www.lifebridgehealth.org/virtualhealth "><em class="icon icon--chevron-right orange"></em>Sinai Wellness &amp; Education
+    Suite</a></li> -->
+                                <!-- <li class="nav-main__link" role="treeitem"><a href="#"><em class="icon icon--chevron-right orange"></em>Virtual Health&nbsp;Library
+    </a></li> -->
+                                <li class="nav-main__link" role="treeitem"><a
                                         href="https://www.jcc.org/center-sports-wellness/lifebridge-health"
                                         target="_blank"><em class="icon icon--chevron-right orange"></em>Living Well @
                                         The J</a></li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="/Main/AboutLifeBridgeHealth.aspx">About</a></li>
-                                <li class="hide-for-large nav-main__utility"><a href="/Main/ContactUs6.aspx">Contact</a>
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
+                                        href="/Main/ContactUs6.aspx">Contact</a>
                                 </li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="http://www.lifejobs.org">Careers</a></li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="/Development/Development.aspx">Giving</a></li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="http://www.mylifebridgehealth.org/ezHealth/ezhealth.aspx">Patients</a>
                                 </li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="/Main/LifeBridgeHealthPhysicianDirectory.aspx">Physicians</a></li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="/main/LifeBridgeHealthMedicalCarePartners.aspx">Partners</a></li>
-                                <li class="hide-for-large nav-main__utility"><a href="/Main/epay.aspx">Bill Pay</a></li>
-                                <li class="hide-for-large nav-main__utility"><a
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
+                                        href="/Main/epay.aspx">Bill Pay</a></li>
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a
                                         href="/Main/CommunityCalendar.aspx">Calendar</a></li>
-                                <li class="hide-for-large nav-main__utility"><a href="tel:4106019355"
+                                <li class="hide-for-large nav-main__utility" role="treeitem"><a href="tel:4106019355"
                                         class="contact text-center"><em class="icon icon--phone"></em>410-601-WELL
                                         (9355)</a></li>
                             </ul>
                         </nav>
                         <!-- start nav-mobile -->
-                        <nav class="nav-mobile hide-for-large" id="nav-mobile" data-toggler=".is-menu-open">
+                        <nav class="nav-mobile hide-for-large" id="nav-mobile" data-toggler=".is-menu-open"
+                            aria-expanded="false" data-t="s0dldi-t">
                             <a id="searchMobileToggle" class="search__toggle"
-                                data-toggle="searchContainerMobile searchMobileToggle" data-toggler="is-close"><em
-                                    class="icon icon--search orange"></em></a>
+                                data-toggle="searchContainerMobile searchMobileToggle" data-toggler="is-close"
+                                aria-expanded="false" data-t="n3i0c6-t"><em class="icon icon--search orange"></em></a>
                             <div class="nav-mobile__button" data-responsive-toggle="nav-main" data-hide-for="large"
-                                data-toggle="nav-mobile html">
+                                data-toggle="nav-mobile html" data-t="chfzru-t" style="">
                                 <!--2-13-2020-->
                                 <!--<div class="nav-mobile__button" data-hide-for="large" data-toggle="nav-mobile html">-->
                                 <!-- start hamburger -->
@@ -154,8 +176,9 @@
                             </div>
                         </nav>
                         <div class="nav-mobile__search-mobile search--mobile" id="search-phablet"
-                            data-toggler="is-visible">
-                            <div id="searchContainerMobile" class="search search--mobile" data-toggler=".is-expanded">
+                            data-toggler="is-visible" aria-expanded="true" data-t="rdk75d-t">
+                            <div id="searchContainerMobile" class="search search--mobile" data-toggler=".is-expanded"
+                                aria-expanded="false" data-t="f8caxo-t">
                                 <div class="search__input-group input-group search--main">
                                     <input id="" class="grid-container search__input input-group-field" placeholder=""
                                         type="search">
@@ -173,7 +196,7 @@
                     <!-- end .cell -->
                     <!-- start .cell -->
                     <div class="cell medium-1 align-right show-for-large">
-                        <a class="search__toggle" data-toggle="searchContainer"><em
+                        <a class="search__toggle" data-toggle="searchContainer" aria-controls="searchContainer"><em
                                 class="icon icon--search orange"></em></a>
                     </div>
                     <!-- end .cell -->
