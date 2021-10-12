@@ -1,0 +1,736 @@
+<style>
+    div .cpsys_BlockColumn {
+        display: block !important;
+    }
+
+    .slider .slide {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        -ms-flex-align: center;
+    }
+
+    .slider {
+        height: 400px !important;
+        background-color: #0071b9 !important;
+    }
+
+    .slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .slide_text {
+        position: absolute;
+        margin-left: 8%;
+        margin-right: 8%;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 0px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .slide_text h2 {
+        margin-bottom: 30px;
+        color: #FFFFFF;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .carousel-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #2Fc0D1;
+    }
+</style>
+
+
+<!-- start hero -->
+<div class="hero__wrap hero--sub hero--sub--message">
+    <div class="hero" role="region" aria-label="Featured Items">
+        <div class="diagonals diagonals--transparent show-for-large"></div>
+        <img class="hero__image is-animating"
+            src="https://www.lifebridgehealth.org/Uploads/Public/Images/Banners/northwest/2019/1440x300_lbh_web_bnr_template_nw_3.jpg"
+            alt="Northwest Hospital">
+        <!-- begin hero positioning statement -->
+        <div class="grid-container grid-x hero__pos-state-wrap hero__pos-state-wrap--sub is-animating">
+            <div class="hero__textbox cell rounded-corner">
+                <h2 class="white">Northwest Hospital</h2>
+                <p class="white vertical-margin-half">Serving the health care needs of the northwest Baltimore area</p>
+                <a href="https://www.lifebridgehealth.org/Northwest/AboutNorthwest1.aspx"
+                    class="button button--hollow vertical-margin-half">Learn More <em
+                        class="icon icon--chevron-right"></em></a>
+            </div>
+        </div>
+        <!-- end hero positioning statement -->
+    </div>
+    <!-- end hero -->
+    <div class="grid-container grid-x hero__directions-wrap">
+        <div class="hero-directions"> <em
+                class="icon icon--location icon__background icon__background--medium white"></em>
+            <div class="hero-directions__link">
+                <p>5401 Old Court Road, Randallstown, MD 21133</p>
+                <a href="https://www.google.com/maps/place/Northwest+Hospital,+5401+Old+Court+Rd,+Randallstown,+MD+21133/@39.3589414,-76.7838753,17z/data=!3m1!4b1!4m5!3m4!1s0x89c8184d640e3d69:0xe05b112fdbff2475!8m2!3d39.3589414!4d-76.7816866"
+                    target="_blank">Directions</a>&nbsp;&gt; &nbsp; <a
+                    href="https://www.lifebridgehealth.org/northwest/NorthwestParkingInformation.aspx">Parking
+                    Information</a>&nbsp;&gt;
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <article class="article grid-container">
+        <header class="article__header">
+            <h1 class="vertical-margin-0-small vertical-margin-2-medium">Improving the well-being of the community</h1>
+        </header>
+        <div class="article__rtf rtf">
+            <p>Northwest Hospital, a nonprofit hospital with 231 beds, has served the northwest Baltimore community for
+                more than 50 years. With a patient-friendly design and impressive array of specialties, the hospital
+                provides patient-centered care with an emphasis on quality and safety. <br>
+                <br>
+                Going beyond the expected, Northwest has recently earned top honors for several innovative safety
+                initiatives. To bring care into the community, Northwest has built nearby facilities that offer
+                convenient services such as outpatient surgery, adult day care and physical rehabilitation. <br>
+                <br>
+            </p>
+            <div class="background--white background-padding vertical-margin-3">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x align-center vertical-margin-1-small vertical-margin-2-medium">
+                        <div class="cell small-12 medium-4"> <a
+                                href="https://www.lifebridgehealth.org/Northwest/AboutNorthwest1.aspx">
+                                <div class="tile vertical-margin-1-small vertical-margin-0-medium">
+                                    <div class="tile__tag"> Our Story<br>
+                                    </div>
+                                    <div class="tile__image">
+                                        <div class="diagonals diagonals--transparent"></div>
+                                        <img src="https://www.lifebridgehealth.org/Uploads/assets/img/northwest/BottomImageNorthwest.jpg"
+                                            alt="Northwest Hospital - Randallstown, MD">
+                                    </div>
+                                    <div class="tile__text"> <em
+                                            class="icon icon--news blue icon--large background--blue tile__icon icon--circle"></em>
+                                        <span style="font-family: Arial;"><span
+                                                style="font-size: 14px; font-family: Arial;">Established in 1962 as
+                                                Liberty Court Rehabilitation Center, and in 1963 became Baltimore County
+                                                General Hospital. In June of 1993, it changed its name to Northwest
+                                                Hospital.</span></span>
+                                        <div class="vertical-margin-half"> <em
+                                                class="icon icon--arrow-right icon--large icon--center medium-light-gray"></em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .tile -->
+                            </a> </div>
+                        <!-- .cell -->
+                        <div class="cell small-12 medium-4"> <a
+                                href="https://www.lifebridgehealth.org/Main/PatientPortal.aspx">
+                                <div class="tile vertical-margin-1-small vertical-margin-0-medium">
+                                    <div class="tile__tag"> Patient Portal<br>
+                                    </div>
+                                    <div class="tile__image">
+                                        <div class="diagonals diagonals--transparent"></div>
+                                        <img src="https://www.lifebridgehealth.org/Uploads/assets/img/BottomImagePatPortal.jpg"
+                                            alt="My LBH Patient Portal">
+                                    </div>
+                                    <div class="tile__text"> <em
+                                            class="icon icon--patient-story blue icon--large background--green-blue tile__icon icon--circle"></em>
+                                        The My LifeBridge Health Patient Portal, your complete health information is
+                                        available 24 hours a day, seven days a week via your computer, laptop, tablet or
+                                        smartphone. It’s safe, secure and super convenient.
+                                        <div class="vertical-margin-half"> <em
+                                                class="icon icon--arrow-right icon--large icon--center medium-light-gray"></em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .tile -->
+                            </a> </div>
+                        <!-- .cell -->
+                        <div class="cell small-12 medium-4"> <a
+                                href="https://www.lifebridgehealth.org/Main/SinaiandNorthwestHospitalPatientAppointmentRequest.aspx">
+                                <div class="tile vertical-margin-1-small vertical-margin-0-medium">
+                                    <div class="tile__tag"> Request an Appointment<br>
+                                    </div>
+                                    <div class="tile__image">
+                                        <div class="diagonals diagonals--transparent"></div>
+                                        <img src="https://www.lifebridgehealth.org/Uploads/assets/img/BottomImageOnlineApp.jpg"
+                                            alt="Online Appointment Request">
+                                    </div>
+                                    <div class="tile__text"> <em
+                                            class="icon icon--treatment blue icon--large background--orange tile__icon icon--circle"></em>
+                                        Request an appointment today! <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <div class="vertical-margin-half"> <em
+                                                class="icon icon--arrow-right icon--large icon--center medium-light-gray"></em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .tile -->
+                            </a> </div>
+                        <!-- .cell -->
+                    </div>
+                    <!-- .grid-x -->
+                </div>
+                <!-- .grid-container -->
+            </div>
+            <!--
+    <figure class="figure float-left">
+    <img class="figure__image" src="https://www.lifebridgehealth.org/Uploads/assets/img/temp/location-detail-main.jpg" alt="" width="720" height="480">
+    <figcaption class="figure__caption">
+    <p>Caption goes here. Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit.</p>
+    </figcaption>
+    </figure>
+    <p>Founded in 1866 as the Hebrew Hospital and Asylum, Sinai Hospital of Baltimore is a Jewish-sponsored health care organization providing care for all people. It is a nonprofit institution with a mission of providing quality patient care, teaching and research. Sinai is an agency of THE ASSOCIATED: Jewish Community Federation of Baltimore.</p>
+    <p>Sinai Hospital of Baltimore provides a broad array of high quality, cost-effective health and health-related services to the people of greater Baltimore. Whether you’re a patient, family member or first-time visitor at Sinai Hospital, our staff is committed to providing you with high quality, personalized and professional care.</p>
+    <p>Sinai, with a mission that includes the teaching of future generations of health professionals, shares many of the characteristics of a university-owned hospital. Its own distinguished full-time faculty, many of whom are nationally and internationally recognized experts in their fields, hold teaching positions at The Johns Hopkins University School of Medicine and the University of Maryland School of Medicine. Several thousand applications are received every year for the graduate medical training positions available at Sinai Hospital. Total residents and fellows based at Sinai are 145.</p>
+    <p>Approximately 400 medical students from across the nation and world receive clinical training each year at Sinai. It is a training site for Johns Hopkins University medical students during their mandatory ambulatory and third-year internal medicine clerkships.</p>
+    -->
+        </div>
+    </article>
+    <div class="hp-portlets background--gray vertical-margin-2-small vertical-margin-12-medium">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x grid-padding-x grid-padding-y grid-margin-y small-up-1 medium-up-2">
+                <div class="hp-portlets-cell cell">
+                    <div class="rounded-box rounded-box--green">
+                        <div class="rounded-box__heading">
+                            <h2 class="rounded-box__title">LifeBridge Health<span
+                                    class="rounded-box__body-title separator-center separator--green">Centers of
+                                    Excellence</span></h2>
+                            <!--<form>
+        <div class="grid-container">
+        <div class="grid-x">
+        <div class="medium-12 cell search">
+        <div class="search__input-group input-group">
+        <input id="" class="search__input input-group-field" placeholder="" type="search">
+        <div class="input-group-button">
+        <button class="search__button button">
+        <span class="show-for-sr">Search</span>
+        <em class="icon icon--search" aria-hidden="true"></em>
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </form>-->
+                        </div>
+                        <div class="rounded-box__body">
+                            <!--<div class="rounded-box__body-title separator-center separator--green">Centers of Excellence</div>-->
+                            <ul class="list--columns-2 list--carets list--no-bullets margin-top-2">
+                                <li><a href="https://www.lifebridgehealth.org/BrainSpine/BrainSpineInstitute.aspx">Brain
+                                        and Spine</a></li>
+                                <li><a href="https://www.lifebridgehealth.org/CancerInst/CancerInst.aspx">Cancer</a>
+                                </li>
+                                <li><a
+                                        href="https://www.lifebridgehealth.org/Cardiovascular/Cardiovascular.aspx">Cardiology</a>
+                                </li>
+                                <li><a href="https://www.lifebridgehealth.org/ER-7/ER-7.aspx">Emergency Medicine</a>
+                                </li>
+                                <li><a href="https://www.lifebridgehealth.org/KriegerEye/KriegerEye.aspx">Eye Care</a>
+                                </li>
+                                <li><a href="https://www.lifebridgehealth.org/Weightloss/Weightlosssurgery1.aspx">Minimally
+                                        Invasive &amp; Robotic Surgery</a></li>
+                                <li><a href="https://www.lifebridgehealth.org/riao/riao.aspx">Orthopedics</a></li>
+                                <li><a href="https://www.lifebridgehealth.org/Sinai/PainManagementServices.aspx">Pain
+                                        Management</a></li>
+                                <li><a
+                                        href="https://www.lifebridgehealth.org/ChildrensHospital/TheHermanWalterSamuelsonChildrensHospitalatSinai2.aspx">Pediatrics</a>
+                                </li>
+                                <li><a
+                                        href="https://www.lifebridgehealth.org/Sinai/SinaiDivisionofInternalMedicine.aspx">Primary
+                                        Care</a></li>
+                                <li><a
+                                        href="https://www.lifebridgehealth.org/SinaiRehabilitationCenter/SinaiHospitalRehabilitationCenter.aspx">Rehabilitations</a>
+                                </li>
+                                <li><a href="https://www.lifebridgehealth.org/WomensServices/WomensServices.aspx">Women's
+                                        Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="hp-portlets-cell cell">
+                    <div class="rounded-box">
+                        <div class="rounded-box__heading">
+                            <h2 class="rounded-box__title">Upcoming Events</h2>
+                            <div class="grid-container">
+                                <div class="grid-x grid-padding-x margin-top-1">
+                                    <div class="medium-12 cell"> <a href="https://www.lifebridgehealth.org/calendar"
+                                            class="button button--hollow"><em class="icon icon--view-all-event"></em>
+                                            View All Events</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-box__body">
+                            <ul class="upcoming-events list--no-bullets">
+                                [cp:scripting key='DataSource' dataId='8d9940f1-9ce9-4e9a-b43a-ad85e51a0266' /]&nbsp;
+                                <!-- Calendar Changes -->
+                                <!--<li>
+        <a class="upcoming-events__item" href="https://www.lifebridgehealth.org/Main/CommunityCalendar/2664.aspx">
+        <div class="upcoming-events__date">Oct <span>18</span></div>
+        <div class="upcoming-events__item-detail">
+        <strong>COLORECTAL CANCER AWARENESS:</strong>
+        <span>Preventable, Beatable and Treatable</span>
+        </div>
+        </a>
+        </li>
+        <!-- <li>
+        <a class="upcoming-events__item" href="#">
+        <div class="upcoming-events__date">Jan <span>18</span></div>
+        <div class="upcoming-events__item-detail">
+        <strong>The LifeBridge Health Diabetes Support</strong>
+        <span>Weinberg Park Heights JCC- 2nd Floor Conference Room</span>
+        </div>
+        </a>
+        </li> -->
+                                <!-- <li>
+        <a class="upcoming-events__item" href="#">
+        <div class="upcoming-events__date">Jan <span>24</span></div>
+        <div class="upcoming-events__item-detail">
+        <strong>Baby Basics 101</strong>
+        <span>Sinai Hospital, IS Training Room #3</span>
+        </div>
+        </a>
+        </li>-->
+                                <!-- End of Calendar Changes -->
+                            </ul>
+                            <main id="NorthwestServiceAwards"> </main>
+                            <div class="infographic grid-container box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Accordin -->
+<!-- Featured Stories -->
+<div class="grid-container vertical-margin-3-large vertical-margin-1-small vertical-margin-2-medium">
+    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y grid-margin-y">
+        <div class="cell medium-12 large-5">
+            <div class="featured-stories box box--padding">
+                <h2 class="featured-stories__title">Featured Stories</h2>
+                <div class="grid-x grid-margin-x">
+                    <div class="featured-stories__main background--gray cell">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Featured Stories -->
+        <div class="cell medium-12 large-7">
+            <!-- NW Service Awards Video -->
+            <iframe src="https://player.vimeo.com/video/536716182" allow="autoplay; fullscreen" allowfullscreen=""
+                width="640" height="360" frameborder="0"></iframe>
+            <!-- End NW Service Awards Video -->
+            <br>
+            <br>
+
+            <div class="slider">
+                <div class="slide fade">
+                    <!-- <a href="https://www.lifebridgehealth.org/RIAO/RIAOAppointments.aspx"><img class="slide-img"
+                            src="/Uploads/Public/Images/riao/Homepage/Slider%201%20-%20Transparent.png" alt="slider 1"
+                            style=""></a> -->
+                    <div class="slide_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Aenean vel elit scelerisque mauris pellentesque pulvinar
+                        pellentesque habitant morbi. Et leo duis ut diam quam nulla porttitor massa. Dignissim diam quis
+                        enim lobortis scelerisque fermentum dui faucibus.
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Aenean vel elit scelerisque mauris pellentesque pulvinar
+                        pellentesque habitant morbi.
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Aenean vel elit scelerisque mauris pellentesque pulvinar
+                        pellentesque habitant morbi. Et leo duis ut diam quam nulla porttitor massa. Dignissim diam quis
+                        enim lobortis scelerisque fermentum dui faucibus. Sed vulputate odio ut enim blandit volutpat
+                        maecenas volutpat blandit. Egestas fringilla phasellus faucibus scelerisque eleifend donec
+                        pretium vulputate.
+                    </div>
+                </div>
+
+                <!--<a id="prev" class="control prev" role="previous"></a>-->
+                <!--<a id="next" class="control next" role="next"></a>-->
+                <div class="carousel-dots" style="text-align:center;">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <!-- <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span> -->
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="grid-container vertical-margin-3">
+        <h2>Additional Information</h2>
+        <!-- start accordion -->
+        <div class="accordion vertical-margin-1" data-accordion="" data-allow-all-closed="true">
+            <!-- start accordion item -->
+            <div class="accordion-item" data-accordion-item=""><a href="#NorthwestServiceAwards"> </a><a
+                    class="accordion-title "> <span class="accordion-title__text">Patient and Visitor Information</span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p> </p>
+                    Whether you’re a patient at Northwest Hospital or a first-time visitor, our staff is committed to
+                    providing
+                    you high quality, personalized and professional care.<br>
+                    <br>
+                    The purpose of this patient/visitor portal is to answer your questions about the hospital and our
+                    services.
+                    This portal will provide all the information you need for your visit with us. If you are a patient,
+                    you can
+                    learn about preparing for your hospitalization, meeting your caregivers and following up after
+                    discharge.
+                    Visitors and family members can find directions to the hospital, a campus map and important phone
+                    numbers.<br>
+                    <br>
+                    We know that a hospital visit can be a stressful time for patients and family members, so our goal
+                    is to
+                    make your stay with us as pleasant as possible.<br>
+                    <br>
+                    Thank you for choosing Northwest Hospital for your medical needs. <br>
+                    <br>
+                    <div id="importantinformation">
+                        <div id="importantleft"> <a
+                                href="https://www.lifebridgehealth.org/Northwest/HelpingYouWithDecisionMaking14.aspx">Advance
+                                Directives</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/NorthwestBillingandFinancialConsiderations.aspx">Billing
+                                and Financial Considerations</a><br>
+                            <a href="http://northwest.hospitalmap.com/html5/">Campus Map</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/NorthwestCaregivers.aspx">Caregivers</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/northwest/NorthwestChaplaincy.aspx">Chaplaincy</a><br>
+                            <a href="https://www.lifebridgehealth.org/Northwest/DiningPatientRoomMenusNWH.aspx">Dining -
+                                Patient
+                                Room Menus</a><br>
+                            <a href="https://www.lifebridgehealth.org/Northwest/DiningatNorthwest.aspx">Dining -
+                                Retail</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/DirectionstoNorthwestHospital.aspx">Directions</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestDischargeInformation.aspx">Discharge
+                                Information</a><br>
+                            <a href="https://www.lifebridgehealth.org/Development/Development.aspx">Donations</a><br>
+                            <a href="https://www.lifebridgehealth.org/Northwest/NWEthicsCommittee.aspx">Ethics
+                                Committee</a><br>
+                            <a href="https://www.lifebridgehealth.org/Northwest/NorthwestFAQ.aspx">FAQs</a><br>
+                            <a href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalGiftShop.aspx">Gift
+                                Shop</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalImportantPhoneNumbers.aspx">Important
+                                Phone Numbers</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalParticipatingInsurancePlans1.aspx">Insurance
+                                Plans Accepted</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestInterpreterServices.aspx">Interpreter
+                                Services</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestLocalAccommodations.aspx">Local
+                                Accommodations</a><br>
+                            <a href="">Meals and Nutrition Services</a> <br>
+                        </div>
+                        <div id="importantright"> <a
+                                href="https://www.lifebridgehealth.org/northwest/NorthwestMedicationInformation.aspx">Medication
+                                Information</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NotaryNorthwest.aspx">Notary
+                                Services</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestParkingInformation.aspx">Parking
+                                Information</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestPatientForms.aspx">Patient
+                                Forms</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestPatientPainManagement.aspx">Patient
+                                Pain Management</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/northwest/NorthwestPatientPersonalItemsandValuables.aspx">Patient
+                                Personal Items and Valuables</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestPatientQualityCare.aspx">Patient
+                                Quality Care</a><br>
+                            <a href="https://www.lifebridgehealth.org/main/PatientsRights.aspx">Patient Rights &amp;
+                                Responsibilities</a><br>
+                            <a href="https://www.lifebridgehealth.org/Main/ePay.aspx">Pay Your
+                                Bill</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/LifeBridgeHealthPharmacyatNorthwestHospital.aspx">Outpatient
+                                Pharmacy</a><br>
+                            <a href="https://www.lifebridgehealth.org/Northwest/ResolvingConcerns2.aspx">Resolving
+                                Concerns</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/RequestMedicalRecordsNorthwest.aspx">Request
+                                Medical Records</a><br>
+                            <a href="https://www.lifebridgehealth.org/northwest/NorthwestTelephoneServices.aspx">Telephone
+                                Services</a><br>
+                            <!--<a href="">Visitor Guide (PDF)</a><br>-->
+                            <a href="https://www.lifebridgehealth.org/Northwest/NWVisitingHoursandGuidelines.aspx">Visiting
+                                Hours and Guidelines</a><br>
+                            <a
+                                href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalFreeWirelessInternetAccess.aspx">Wireless
+                                Internet</a> <br>
+                            <strong><br>
+                                <br>
+                                My LifeBridge Health<br>
+                                Patient Portal</strong><br>
+                            <br>
+                            <a href="https://www.lifebridgehealth.org/Main/PatientPortal.aspx">Click to access the
+                                portal</a><br>
+                            <br>
+                            <a href="https://www.lifebridgehealth.org/Main/PatientPortal.aspx"><img
+                                    src="https://www.lifebridgehealth.org/Uploads/Public/lbhredesign/images/sliderimages/patientportal.png"
+                                    alt="My LifeBridge Health Patient Portal"></a>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end accordion item -->
+            <!-- start accordion item -->
+            <div class="accordion-item" data-accordion-item=""> <a class="accordion-title "> <span
+                        class="accordion-title__text">Patient Rights</span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p> <a href="https://www.lifebridgehealth.org/main/PatientsRights.aspx">Patient Rights and
+                            Responsibilities</a><br>
+                        <a href="https://www.lifebridgehealth.org/Main/MarylandPatientBillofRights.aspx">Maryland
+                            Patient Bill of Rights</a>
+                    </p>
+                </div>
+            </div>
+            <!-- end accordion item -->
+            <!-- start accordion item -->
+            <div class="accordion-item" data-accordion-item=""> <a class="accordion-title "> <span
+                        class="accordion-title__text">Important Information</span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p><strong>Main Number:</strong> <a href="tel:410-521-2200">410-521-2200</a><br>
+                        <strong>Auxiliary:</strong> <a href="tel:410-521-5911">410-521-5911</a><br>
+                        <strong>Admitting:</strong> <a href="tel:410-521-5923">410-521-5923</a><br>
+                        <strong>Billing, Hospital (After Discharge):</strong> <a
+                            href="tel:410-521-5959">410-521-5959</a><br>
+                        <strong>Pastoral Care and Chaplaincy Service:</strong> <a
+                            href="tel:410-601-9680">410-601-9680</a><br>
+                        <strong>Guest Relations:</strong> <a href="tel:410-521-2200">410-521-2200</a><br>
+                        <strong>Dietitian:</strong> <a href="tel:410-521-5372">410-521-5372</a><br>
+                        <strong>Emergency Center (ER-7):</strong>&nbsp;<a href="tel:410-521-5950">410-521-5950</a><br>
+                        <strong>Escort Service - Security:</strong> <a href="tel:410-521-2200">410-521-2200</a><br>
+                        <strong>Financial Counselor:</strong> <a href="tel:410-521-2200">410-521-2200</a><br>
+                        <strong>Gift Shop:</strong> <a href="tel:410-701-4637">410-701-4637</a><br>
+                        <strong>Nursing Office:</strong> <a href="tel:410-521-5977">410-521-5977</a><br>
+                        <strong>Physician Referral:</strong> <a href="tel:410-601-9355">410-601-9355</a><br>
+                        <strong>Retail Pharmacy:</strong> <a href="tel:410-701-4455">410-701-4455</a><br>
+                        <strong>Social Work Services:</strong> <a href="tel:410-521-7989">410-521-7989<br>
+                        </a>
+                    </p>
+                    <a href="tel:410-521-7989"> </a>
+                </div>
+                <a href="tel:410-521-7989"> </a>
+            </div>
+            <a href="tel:410-521-7989">
+                <!-- end accordion item -->
+                <!-- start accordion item -->
+            </a>
+            <div class="accordion-item" data-accordion-item=""><a href="tel:410-521-7989"> </a><a
+                    class="accordion-title "> <span class="accordion-title__text">Driving Directions</span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p><a href="https://goo.gl/maps/RGpmFZ2rRy12" target="_blank">Click here</a> for driving directions
+                        to Northwest Hospital.<br>
+                    </p>
+                </div>
+            </div>
+            <!-- end accordion item -->
+            <!-- start accordion item -->
+            <div class="accordion-item" data-accordion-item=""> <a class="accordion-title "> <span
+                        class="accordion-title__text">Northwest Hospital Management</span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p><a href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalBoardMembers1.aspx">Northwest
+                            Board of Directors<br>
+                        </a><a
+                            href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalManagementTeam1.aspx">Northwest
+                            Management Team</a><br>
+                        <a href="https://www.lifebridgehealth.org/Northwest/NorthwestHospitalDivisionChiefs.aspx">Northwest
+                            Division Chiefs</a><br>
+                        <!-- <a href="https://www.lifebridgehealth.org/Uploads/Public/Documents/marketing/REACHINGOUT.pdf" target="_blank">Community Benefit Report</a>&nbsp;(PDF)-->
+                    </p>
+                </div>
+            </div>
+            <!-- end accordion item -->
+            <!-- start accordion item -->
+            <div class="accordion-item" data-accordion-item=""> <a class="accordion-title "> <span
+                        class="accordion-title__text">Need Help Paying Your Bill? </span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p>Thank you for choosing Northwest Hospital as your healthcare provider. Our Patient Financial
+                        Services Department is available to assist patients who do not carry medical insurance
+                        (uninsured) or face significant co-payment, coinsurance and/or deductible charges, which may be
+                        challenging to manage due to personal hardship or financial distress. Depending on the specific
+                        financial situation, a patient may be eligible to receive Maryland Medical Assistance
+                        (Medicaid), Financial Assistance or take advantage of extended payment plans.<br>
+                        <br>
+                        You may be eligible for Financial Assistance.<br>
+                        <a href="https://www.lifebridgehealth.org/Main/LifeBridgeHealthFinancialAssistance.aspx">Click
+                            here</a> for more information.
+                    </p>
+                </div>
+            </div>
+            <!-- end accordion item -->
+            <!-- start accordion item -->
+            <div class="accordion-item" data-accordion-item=""> <a class="accordion-title "> <span
+                        class="accordion-title__text">Have a Question? Ask the President of Northwest Hospital</span>
+                    <button class="accordion__button icon icon--expand " aria-hidden="true"></button>
+                </a>
+                <div class="accordion-content rtf" data-tab-content="">
+                    <p>Each submission is personally reviewed and the president will get back to you as soon as
+                        possible. Thank you for your interest in Northwest Hospital<a
+                            href="https://www.lifebridgehealth.org/northwest/AskPresidentofNorthwestHospital.aspx">click
+                            here</a> to fill out the contact form.<br>
+                    </p>
+                </div>
+            </div>
+            <!-- end accordion item -->
+        </div>
+        <!-- end accordion -->
+    </div>
+    <div class="infographic grid-container box"></div>
+    <!-- RSS Feed -->
+    <script>
+        //RSS feed script
+        const newsContainer = document.querySelector(".featured-stories__main")                   // Selects container to inject HTML
+        fetch("https://app.meltwater.com/gyda/outputs/5ff75d36e5833875712fa9f3/rendering?apiKey=56311ab54e720b893caa7dca&type=xml")            //HTTP request
+            .then(response => response.text())
+            .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))                          //parses xml
+            .then(data => {
+                const items = data.querySelectorAll("document");                                                           //select all docs in xml
+                const sliced = Array.from(items).slice(0, 5)                                                          //gets first 5 items
+                sliced.forEach(el => {                                                                 //and loops through each doc
+                    const articleDiv = document.createElement("DIV")
+                    const articleHeader = document.createElement("H5")                              //create elements
+                    const date = document.createElement("P")
+                    const link = document.createElement("A")
+                    const button = document.createElement("A")
+                    articleDiv.classList.add("featured-stories__body")                            //style and inject content into elements
+                    date.innerHTML = `<em>${el.querySelector("createDate5").textContent}</em>`
+                    button.classList.add("button", "button--hollow", "button--hollow--light-brown")
+                    button.href = el.querySelector("url").textContent
+                    button.innerHTML += `
+    <div class="button__inner">Read More <em class="icon icon--chevron-right"></em></div>
+    `
+                    link.innerHTML = el.querySelector("title").textContent
+                    link.href = el.querySelector("url").textContent
+                    articleDiv.appendChild(articleHeader)                                               //append elements to DOM tree
+                    articleHeader.appendChild(link)
+                    articleDiv.appendChild(date)
+                    articleDiv.appendChild(button)
+                    newsContainer.appendChild(articleDiv)
+                }
+                )
+            })
+            .catch(err => console.log(err))
+
+        //End RSS feed
+
+        //slider
+        const slides = document.querySelectorAll(".slide")
+        const dots = document.querySelectorAll(".dot")
+
+        let currentSlideIndex = -1;                                       //sets initial index
+        function advanceSliderItem() {
+
+            currentSlideIndex++;                                                   //increments
+            if (currentSlideIndex >= slides.length) {                            //if index bigger than # of slides sets back to first slide
+                currentSlideIndex = 0;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].setAttribute("aria-hidden", "true");                                    //For Accessibility
+                dots[i].classList.remove("active")
+            }
+            slides[currentSlideIndex].style.display = "flex";
+            slides[currentSlideIndex].setAttribute("aria-hidden", "false");       //For Accessibility
+            dots[currentSlideIndex].classList.add("active")
+        }
+
+        function previousSliderItem() {
+            currentSlideIndex--;                                                //decrements
+            if (currentSlideIndex <= -1) {                                      //if index less than 0 sets moves to last slide
+                currentSlideIndex = slides.length - 1;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
+                dots[i].classList.remove("active")
+            }
+            slides[currentSlideIndex].style.display = "flex";
+            slides[currentSlideIndex].setAttribute("aria-hidden", "false");      //For Accessibility
+            dots[currentSlideIndex].classList.add("active")
+        }
+
+        //next.addEventListener("click", advanceSliderItem )
+        //prev.addEventListener("click", previousSliderItem )
+
+        let intervalID = setInterval(advanceSliderItem, 10000);
+        advanceSliderItem()
+
+
+        function currentSlide(index) {
+            currentSlideIndex = index;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
+                dots[i].classList.remove("active")
+            }
+            slides[currentSlideIndex].style.display = "flex";
+            slides[currentSlideIndex].setAttribute("aria-hidden", "false");      //For Accessibility
+            dots[currentSlideIndex].classList.add("active")
+
+        }
+    </script>
+</div>
