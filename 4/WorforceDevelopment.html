@@ -3,161 +3,266 @@
     display: block !important;
     } */
     .docInfoBorder {
-    margin: auto;
-    padding: 25px;
-    border: solid 1px;
+        margin: auto;
+        padding: 25px;
+        border: solid 1px;
     }
+
     .slider .slide {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        -ms-flex-align: center;
     }
+
     .slider {
-    height: 400px;
-    background-color: #0072ce !important;
-    background-image: url("/Uploads/Public/Images/workforceDevelopment/BlueGeo3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+        height: 400px;
+        background-color: #0072ce !important;
+        background-image: url("/Uploads/Public/Images/workforceDevelopment/BlueGeo3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        transition: background-image 0.8s ease-in-out;
     }
+
     .slide-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
     }
+
     .slide_text {
-    position: absolute;
-    width: 84%;
-    margin-left: 8%;
-    margin-right: 8%;
-    top: 50%;
-    transform: translate(0, -50%);
-    left: 0px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 1.2rem;
+        position: absolute;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 0px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.2rem;
     }
+
     .slide_text h2 {
-    margin-bottom: 30px;
-    color: #FFFFFF;
+        margin-bottom: 30px;
+        color: #FFFFFF;
     }
-    .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    }
+
     .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
     }
+
     .carousel-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: fit-content;
-    margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: fit-content;
+        margin: 0 auto;
     }
+
     .active,
     .dot:hover {
-    background-color: #2Fc0D1;
+        background-color: #2Fc0D1;
     }
+
     .courseHeader {
-    text-decoration: underline;
-    font-size: 1.5rem;
+        text-decoration: underline;
+        font-size: 1.5rem;
     }
+
     thead {
-    background: none !important;
-    color: black !important;
+        background: none !important;
+        color: black !important;
     }
+
     thead td {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px 1px 0px 1px
+        border-color: black;
+        border-style: solid;
+        border-width: 1px 1px 0px 1px
     }
+
     tbody td {
-    border: solid 1px;
+        border: solid 1px;
     }
+
     @media screen and (max-width: 575px) {
-    .slider {
-    height: 695px !important;
+        .slider {
+            height: 695px !important;
+        }
     }
-    }
+
     @media screen and (max-width: 851px) {
-    .group1 {
-    order: 1
+        .group1 {
+            order: 1
+        }
+
+        .group2 {
+            order: 3
+        }
+
+        .group3 {
+            order: 5
+        }
     }
-    .group2 {
-    order: 3
-    }
-    .group3 {
-    order: 5
-    }
-    }
+
     h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #0072ce;
+        font-size: 3rem;
+        font-weight: 900;
+        color: #0072ce;
     }
+
     h2 {
-    font-weight: 900;
-    color: #0072ce;
-    font-size: 2rem;
+        font-weight: 900;
+        color: #0072ce;
+        font-size: 2rem;
     }
+
     h3 {
-    font-weight: 900;
-    color: #333;
-    font-size: 2rem;
-    text-transform: uppercase;
+        font-weight: 900;
+        color: #333;
+        font-size: 2rem;
+        text-transform: uppercase;
     }
+
     hr {
-    border-color: #555555;
-    border-width: 2px;
-    width: 200px;
+        border-color: #555555;
+        border-width: 2px;
+        width: 200px;
     }
+
     .pbig {
-    font-size: 28px;
-    font-weight: 900;
-    color: #333;
-    max-width: 900px;
-    padding-top: 5px;
-    margin: auto;
+        font-size: 28px;
+        font-weight: 900;
+        color: #333;
+        max-width: 900px;
+        padding-top: 5px;
+        margin: auto;
     }
+
     .coursebox {
-    padding: 25px;
-    box-shadow: 2px 2px 15px #ccc;
-    margin-bottom: 60px;
+        padding: 25px;
+        box-shadow: 2px 2px 15px #ccc;
+        margin-bottom: 60px;
+    }
+
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+        /* from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        } */
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+        /* from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        } */
+    }
+
+    .fadeOut {
+        -webkit-animation-name: fadeOut;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fadeOut;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+        /* from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        } */
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+
+        /* from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        } */
     }
 </style>
 <div class="grid-container">
-<div style="display: flex;width: 100%;">
-<div style="margin:auto;text-align: center;">
-<h1>Workforce Development</h1>
-<hr>
-<p class="pbig">Strengthening our workforce one member at a time.</p>
-<br>
-<p>Are you looking to jumpstart your healthcare career? Our Workforce Development team is ready to assist you in
-learning more about healthcare careers that may be a fit for you, and getting you started on the next steps of
-your
-career path. Enroll in a course today!</p>
-<h2 style="margin-top: 80px">The Workforce Development Team</h2>
-</div>
-</div>
-<!-- <table>
+    <div style="display: flex;width: 100%;">
+        <div style="margin:auto;text-align: center;">
+            <h1>Workforce Development</h1>
+            <hr>
+            <p class="pbig">Strengthening our workforce one member at a time.</p>
+            <br>
+            <p>Are you looking to jumpstart your healthcare career? Our Workforce Development team is ready to assist
+                you in
+                learning more about healthcare careers that may be a fit for you, and getting you started on the next
+                steps of
+                your
+                career path. Enroll in a course today!</p>
+            <h2 style="margin-top: 80px">The Workforce Development Team</h2>
+        </div>
+    </div>
+    <!-- <table>
         <tr>
             <td>Anita Hammond, Manager</td>
             <td><a href="mailto:ashammon@lifebridgehealth.org">ashammon@lifebridgehealth.org</a></td>
@@ -174,457 +279,480 @@ career path. Enroll in a course today!</p>
             <td><a href="tel:(410) 601-0642">(410) 601-0642</a></td>
         </tr>
     </table> -->
-<div class="grid-x grid-margin-x vertical-margin-2 more-section">
-<div class="cell small-12 medium-4 group1">
-*image placeholder*
-</div>
-<div class="cell small-12 medium-4 group2">
-*image placeholder*
-</div>
-<div class="cell small-12 medium-4 group3">
-*image placeholder*
-</div>
-<!-- </div> -->
-<!-- <div class="grid-x grid-margin-x vertical-margin-2 more-section"> -->
-<div class="cell small-12 medium-4 docInfoBorder group1">
-Anita Hammond, Manager
-<br>
-<a href="mailto:ashammon@lifebridgehealth.org">ashammon@lifebridgehealth.org</a>
-<br>
-<a href="tel:(410) 469-4161">(410) 469-4161</a>
-</div>
-<div class="cell small-12 medium-4 docInfoBorder group2">
-Andrea Hanna, Career Navigator
-<br>
-<a href="mailto:ashammon@lifebridgehealth.org">ashammon@lifebridgehealth.org</a>
-<br>
-<a href="tel:(410) 601-2875">(410) 601-2875</a>
-</div>
-<div class="cell small-12 medium-4 docInfoBorder group3">
-Melissa Sharlat, Career Navigator
-<br>
-<a href="mailto:msharlat@lifebridgehealth.org">msharlat@lifebridgehealth.org</a>
-<br>
-<a href="tel:(410) 601-0642">(410) 601-0642</a>
-</div>
-</div>
-<div class="slider">
-<div class="slide fade" aria-hidden="false" style="display: flex;">
-<!-- start slide background
+    <div class="grid-x grid-margin-x vertical-margin-2 more-section">
+        <div class="cell small-12 medium-4 group1">
+            *image placeholder*
+        </div>
+        <div class="cell small-12 medium-4 group2">
+            *image placeholder*
+        </div>
+        <div class="cell small-12 medium-4 group3">
+            *image placeholder*
+        </div>
+        <!-- </div> -->
+        <!-- <div class="grid-x grid-margin-x vertical-margin-2 more-section"> -->
+        <div class="cell small-12 medium-4 docInfoBorder group1">
+            Anita Hammond, Manager
+            <br>
+            <a href="mailto:ashammon@lifebridgehealth.org">ashammon@lifebridgehealth.org</a>
+            <br>
+            <a href="tel:(410) 469-4161">(410) 469-4161</a>
+        </div>
+        <div class="cell small-12 medium-4 docInfoBorder group2">
+            Andrea Hanna, Career Navigator
+            <br>
+            <a href="mailto:ashammon@lifebridgehealth.org">ashammon@lifebridgehealth.org</a>
+            <br>
+            <a href="tel:(410) 601-2875">(410) 601-2875</a>
+        </div>
+        <div class="cell small-12 medium-4 docInfoBorder group3">
+            Melissa Sharlat, Career Navigator
+            <br>
+            <a href="mailto:msharlat@lifebridgehealth.org">msharlat@lifebridgehealth.org</a>
+            <br>
+            <a href="tel:(410) 601-0642">(410) 601-0642</a>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slide fadeIn" aria-hidden="false" style="display: flex;">
+            <!-- start slide background
 <img src="/Uploads/Public/Images/workforceDevelopment/BlueGeo.jpg" class="slide-img" alt="Testimonials Background">
 <!-- end slide background -->
-<div class="slide_text">
-“After I graduated from the program, I got promoted in my position. I have also maintained a
-relationship with my career coach, who has been a great inspiration to me."
-<br>
-~Former School at Work Student
-</div>
-</div>
-<div class="slide fade" aria-hidden="true" style="display: none;">
-<div class="slide_text">
-“…workforce development navigator, who is really passionate and caring and wants to see you do well and
-succeed"
-<br>
-~ LPN Apprenticeship Candidate
-</div>
-</div>
-<div class="slide fade" aria-hidden="true" style="display: none;">
-<div class="slide_text">
-“The CSP class was fun and informative. From the first day, I felt comfortable with the whole class. Our
-instructors were the best. They were helpful and there every step of the way. You could honestly tell
-they wanted us to truly succeed.”
-<br>
-CSP Trainee
-</div>
-</div>
-<div class="slide fade" aria-hidden="true" style="display: none;">
-<div class="slide_text">
-“What was most impactful from this experience, is the bond that was created with my nine
-classmates. Since week one, we developed and fostered relationships that helped us to survive and
-successfully complete the course. I’m looking forward to building on what I’ve learned to become a
-valuable member of the Central Sterile Processing team. I feel this would be the ultimate reward because
-of this team’s dedication and commitment to the highest level of patient care.”
-<br>
-~CSP Trainee
-</div>
-</div>
-<div class="carousel-dots" style="text-align:center;">
-<span class="dot active" onclick="currentSlide(0)"></span>
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
-</div>
-<div style="margin:auto;text-align: center;">
-<h2 style="margin-top: 50px">Tuition Reimbursement Program </h2>
-<p>Tuition Reimbursement Program | Main</p>
-<br>
-<h2 style="font-size: 3rem; margin-top: 80px">Our Courses</h2>
-<hr>
-</div>
-<br>
-<br>
-<br>
-<h3>Skill Building Courses</h3>
-<br>
-<div class="coursebox">
-<h2 class="courseHeader">TEAS (Test of Essential Academic Skills) Preparation Course</h2>
-<p>This course is for employees who plan to apply for the LPN Apprenticeship Program. Learn the best strategies for
-approaching various types of questions in the ATI TEAS for Math, Science, English Language and Usage, and
-Reading. Practice tests in class off the opportunity to develop test-taking tricks that improve time management
-and anxiety reduction.</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>M&amp;W, Mar 7-23</td>
-            <td>5-7:30 pm</td>
-            <td>Online</td>
-            <td><a href="https://forms.office.com/r/PXgkGS3AF9">Form</a></td>
-            <td><img src="/Uploads/Public/Images/workforceDevelopment/qr1.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">School at Work Program </h2>
-<p>This program provides participants with the necessary skills to improve in their current position, develop a
-personalized career plan, seek technical education, or job advancement, and build their confidence to realize a
-healthcare career.
-<br>
-<strong>Registration closes 1/11/22.</strong>
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Tues, 2/15-8/16</td>
-            <td>4-6 pm</td>
-            <td>Online</td>
-            <td><a href="https://forms.office.com/r/x17sDRxfM8">Form</a></td>
-            <td><img src="/Uploads/Public/Images/workforceDevelopment/qr2.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Microsoft Digital Literacy</h2>
-<p>This course is designed for novice computer users and aims to teach participants the fundamentals of digital
-technologies using the Microsoft platform. Learners will be able to use their skills to enhance their work.
-Participants who complete the course will receive a Digital Literacy Expert Certificate from Microsoft.
-<br>
-<strong>Registration closes 2/1/22.</strong>
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Thu, 2/10</td>
-            <td>5-6:30 pm</td>
-            <td rowspan="2">In-Person Orientation at Sinai OR In-Person Orientation at NW</td>
-            <td rowspan="3"><a href="https://forms.office.com/r/vvaaesaHzk">Form</a></td>
-            <td rowspan="3"><img src="/Uploads/Public/Images/workforceDevelopment/qr3.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-        <tr>
-            <td>Thu, 2/17</td>
-            <td>5-6:30 pm</td>
-        </tr>
-        <tr>
-            <td>Thu, 2/24-3/31</td>
-            <td>5-6:30 pm</td>
-            <td>Online</td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Microsoft Excel-Part 1</h2>
-<p>This course teaches participants to navigate the Excel environment, perform calculations, modify worksheets,
-format worksheets, print, and manage workbooks. Manager Approval and Computer/Internet Access Required! Dual
-monitors and microphone recommended.
-<br>
-<strong>Registration closes 3/11/22.</strong>
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td>Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Wed, March 16</td>
-            <td>9 am-4 pm</td>
-            <td>Online</td>
-            <td>HealthStream</td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Microsoft Excel-Part 2</h2>
-<p>This course builds upon the foundational knowledge presented in the MS Excel-Part 1 course and will help start
-you down the road to creating advanced workbooks and worksheets. Manager Approval and Computer/Internet Access
-Required! Dual monitors and microphone recommended.
-<br>
-<strong>Registration closes 3/30/22.</strong>
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td>Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Wed, April 6</td>
-            <td>9 am-4 pm</td>
-            <td>Online</td>
-            <td>HealthStream</td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Medical Terminology–Part I</h2>
-<p>Learn root words, prefixes, and suffixes in order to have a basic understanding of medical terminology used in a
-health care setting. A workbook is part of the course and will need to be printed first. This is a self-paced
-course. Search HealthStream Catalog for Medical Terminology-Part I.
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td>Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Arranged</td>
-            <td>Arranged</td>
-            <td>Online</td>
-            <td>HealthStream</td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Bridge to College </h2>
-<p>This course will assist employees bridge foundational educational knowledge with college level coursework. The
-9-week course will cover advanced reading, writing, and math concepts.
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>Online</td>
-            <td><a href="https://forms.office.com/r/L4RNhZ09Ag">Form</a></td>
-            <td><img src="/Uploads/Public/Images/workforceDevelopment/qr4.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<br>
-<br>
-<br>
-<br>
-<h3>Job Training Programs</h3>
-<br>
-<div class="coursebox">
-<h2 class="courseHeader">CNA/GNA Program</h2>
-<p>This course series prepares students to apply for Maryland State certification as both a Certified Nursing
-Assistant (CNA) and a Geriatric Nursing Assistant (GNA). The CNA's or GNA's primary duties are assisting with
-activities of daily living, which may include helping patients/clients with meals, personal grooming, and
-toileting. Additional responsibilities involve performing basic nursing skills such as obtaining a
-patients/client’s vital signs, i.e. pulse rate or blood pressure.
-<br>
-Registration ends ___________________.
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>Carroll Community College</td>
-            <td><a href="https://forms.office.com/r/JSBvQCTcdb">Form</a></td>
-            <td><img src="/Uploads/Public/Images/workforceDevelopment/qr5.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Licensed Practical Nursing (LPN) Apprenticeship Program</h2>
-<p>The Practical Nursing (LPN) program is a twelve-month, three semester, 46 credit certificate program compromised
-of 12 courses designed to provide theoretical and clinical study in nursing that will enable students to assist
-other health care professionals, such as registered nurses and physicians, and work as members of a health care
-team. Upon successful completion of the program, graduates are eligible to take the National Council Licensure
-Examination (NCLEX-PN).
-</p>
-<p style="margin-bottom:0px">Apprenticeship Program Requirements:</p>
-<ul style="margin-left:38px">
-    <li>CNA/GNA Certification for minimum of one year</li>
-    <li>LBH Patient Care experience for a minimum of one year</li>
-    <li>No disciplinary actions above an oral warning within the past year </li>
-    <li>Completion of required prerequisites</li>
-</ul>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td>Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>November 18</td>
-            <td>4-5 pm</td>
-            <td>Online</td>
-            <td><a href="https://meeting.windstream.com/j/1123373978">Stream</a></td>
-        </tr>
-        <tr>
-            <td>December 15</td>
-            <td>11 am-Noon</td>
-            <td>Online</td>
-            <td><a href="https://meeting.windstream.com/j/1123373978">Stream</a></td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Medical Front Office Program </h2>
-<p>This program prepares participants to become Certified Medical Administrative Assistants in an office setting.
-This 6-month program also encompasses skills needed become a Certified Medical Assistant.
-<br>
-<strong>Registration closes 1/4/22.</strong>
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mon &amp; Wed, 2/7-8/8</td>
-            <td>6-8 pm</td>
-            <td>Online</td>
-            <td><a href="https://forms.office.com/r/6QEpNaNrPU">Form</a></td>
-            <td><img src="/Uploads/Public/Images/workforceDevelopment/qr6.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<br>
-<br>
-<br>
-<br>
-<h3>Career Development</h3>
-<br>
-<div class="coursebox">
-<h2 class="courseHeader">Career Care Program</h2>
-<p>This online, self-paced, healthcare-specific program helps you plan and manage your career path with LBH!
-Reflect. Explore. Investigate. Prepare.
-<br>
-Computer/Internet Access Required!
-</p>
-<table>
-    <thead>
-        <tr>
-            <td>Day/Dates</td>
-            <td>Time</td>
-            <td>Delivery Method</td>
-            <td colspan="2">Registration</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Arranged</td>
-            <td>Arranged</td>
-            <td>Online</td>
-            <td><a href="https://forms.office.com/r/kmbueuGuWB">Form</a></td>
-            <td><img src="/Uploads/Public/Images/workforceDevelopment/qr7.png" alt="qr code" style="height:80px">
-            </td>
-        </tr>
-    </tbody>
-</table>
-<br>
-</div>
-<div class="coursebox">
-<h2 class="courseHeader">Career Coaching Program</h2>
-<p>Connect with a Career Navigator for help with career exploration, making career choices, managing career changes,
-lifelong career development and dealing with other career-related issues.
-<br>
-Email <a href="mailto:lbh_workforce_development@lifebridgehealth.org">lbh_workforce_development@lifebridgehealth.org</a>
-to be connected to a Career Navigator.
-</p>
-</div>
+            <div class="slide_text">
+                “After I graduated from the program, I got promoted in my position. I have also maintained a
+                relationship with my career coach, who has been a great inspiration to me."
+                <br>
+                ~Former School at Work Student
+            </div>
+        </div>
+        <div class="slide fadeIn" aria-hidden="true" style="display: none;">
+            <div class="slide_text">
+                “…workforce development navigator, who is really passionate and caring and wants to see you do well and
+                succeed"
+                <br>
+                ~ LPN Apprenticeship Candidate
+            </div>
+        </div>
+        <div class="slide fadeIn" aria-hidden="true" style="display: none;">
+            <div class="slide_text">
+                “The CSP class was fun and informative. From the first day, I felt comfortable with the whole class. Our
+                instructors were the best. They were helpful and there every step of the way. You could honestly tell
+                they wanted us to truly succeed.”
+                <br>
+                CSP Trainee
+            </div>
+        </div>
+        <div class="slide fadeIn" aria-hidden="true" style="display: none;">
+            <div class="slide_text">
+                “What was most impactful from this experience, is the bond that was created with my nine
+                classmates. Since week one, we developed and fostered relationships that helped us to survive and
+                successfully complete the course. I’m looking forward to building on what I’ve learned to become a
+                valuable member of the Central Sterile Processing team. I feel this would be the ultimate reward because
+                of this team’s dedication and commitment to the highest level of patient care.”
+                <br>
+                ~CSP Trainee
+            </div>
+        </div>
+        <div class="carousel-dots" style="text-align:center;">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div style="margin:auto;text-align: center;">
+        <h2 style="margin-top: 50px">Tuition Reimbursement Program </h2>
+        <p>Tuition Reimbursement Program | Main</p>
+        <br>
+        <h2 style="font-size: 3rem; margin-top: 80px">Our Courses</h2>
+        <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Skill Building Courses</h3>
+    <br>
+    <div class="coursebox">
+        <h2 class="courseHeader">TEAS (Test of Essential Academic Skills) Preparation Course</h2>
+        <p>This course is for employees who plan to apply for the LPN Apprenticeship Program. Learn the best strategies
+            for
+            approaching various types of questions in the ATI TEAS for Math, Science, English Language and Usage, and
+            Reading. Practice tests in class off the opportunity to develop test-taking tricks that improve time
+            management
+            and anxiety reduction.</p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M&amp;W, Mar 7-23</td>
+                    <td>5-7:30 pm</td>
+                    <td>Online</td>
+                    <td><a href="https://forms.office.com/r/PXgkGS3AF9">Form</a></td>
+                    <td><img src="/Uploads/Public/Images/workforceDevelopment/qr1.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">School at Work Program </h2>
+        <p>This program provides participants with the necessary skills to improve in their current position, develop a
+            personalized career plan, seek technical education, or job advancement, and build their confidence to
+            realize a
+            healthcare career.
+            <br>
+            <strong>Registration closes 1/11/22.</strong>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tues, 2/15-8/16</td>
+                    <td>4-6 pm</td>
+                    <td>Online</td>
+                    <td><a href="https://forms.office.com/r/x17sDRxfM8">Form</a></td>
+                    <td><img src="/Uploads/Public/Images/workforceDevelopment/qr2.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Microsoft Digital Literacy</h2>
+        <p>This course is designed for novice computer users and aims to teach participants the fundamentals of digital
+            technologies using the Microsoft platform. Learners will be able to use their skills to enhance their work.
+            Participants who complete the course will receive a Digital Literacy Expert Certificate from Microsoft.
+            <br>
+            <strong>Registration closes 2/1/22.</strong>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Thu, 2/10</td>
+                    <td>5-6:30 pm</td>
+                    <td rowspan="2">In-Person Orientation at Sinai OR In-Person Orientation at NW</td>
+                    <td rowspan="3"><a href="https://forms.office.com/r/vvaaesaHzk">Form</a></td>
+                    <td rowspan="3"><img src="/Uploads/Public/Images/workforceDevelopment/qr3.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thu, 2/17</td>
+                    <td>5-6:30 pm</td>
+                </tr>
+                <tr>
+                    <td>Thu, 2/24-3/31</td>
+                    <td>5-6:30 pm</td>
+                    <td>Online</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Microsoft Excel-Part 1</h2>
+        <p>This course teaches participants to navigate the Excel environment, perform calculations, modify worksheets,
+            format worksheets, print, and manage workbooks. Manager Approval and Computer/Internet Access Required! Dual
+            monitors and microphone recommended.
+            <br>
+            <strong>Registration closes 3/11/22.</strong>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td>Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wed, March 16</td>
+                    <td>9 am-4 pm</td>
+                    <td>Online</td>
+                    <td>HealthStream</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Microsoft Excel-Part 2</h2>
+        <p>This course builds upon the foundational knowledge presented in the MS Excel-Part 1 course and will help
+            start
+            you down the road to creating advanced workbooks and worksheets. Manager Approval and Computer/Internet
+            Access
+            Required! Dual monitors and microphone recommended.
+            <br>
+            <strong>Registration closes 3/30/22.</strong>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td>Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wed, April 6</td>
+                    <td>9 am-4 pm</td>
+                    <td>Online</td>
+                    <td>HealthStream</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Medical Terminology–Part I</h2>
+        <p>Learn root words, prefixes, and suffixes in order to have a basic understanding of medical terminology used
+            in a
+            health care setting. A workbook is part of the course and will need to be printed first. This is a
+            self-paced
+            course. Search HealthStream Catalog for Medical Terminology-Part I.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td>Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arranged</td>
+                    <td>Arranged</td>
+                    <td>Online</td>
+                    <td>HealthStream</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Bridge to College </h2>
+        <p>This course will assist employees bridge foundational educational knowledge with college level coursework.
+            The
+            9-week course will cover advanced reading, writing, and math concepts.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>Online</td>
+                    <td><a href="https://forms.office.com/r/L4RNhZ09Ag">Form</a></td>
+                    <td><img src="/Uploads/Public/Images/workforceDevelopment/qr4.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Job Training Programs</h3>
+    <br>
+    <div class="coursebox">
+        <h2 class="courseHeader">CNA/GNA Program</h2>
+        <p>This course series prepares students to apply for Maryland State certification as both a Certified Nursing
+            Assistant (CNA) and a Geriatric Nursing Assistant (GNA). The CNA's or GNA's primary duties are assisting
+            with
+            activities of daily living, which may include helping patients/clients with meals, personal grooming, and
+            toileting. Additional responsibilities involve performing basic nursing skills such as obtaining a
+            patients/client’s vital signs, i.e. pulse rate or blood pressure.
+            <br>
+            Registration ends ___________________.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>Carroll Community College</td>
+                    <td><a href="https://forms.office.com/r/JSBvQCTcdb">Form</a></td>
+                    <td><img src="/Uploads/Public/Images/workforceDevelopment/qr5.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Licensed Practical Nursing (LPN) Apprenticeship Program</h2>
+        <p>The Practical Nursing (LPN) program is a twelve-month, three semester, 46 credit certificate program
+            compromised
+            of 12 courses designed to provide theoretical and clinical study in nursing that will enable students to
+            assist
+            other health care professionals, such as registered nurses and physicians, and work as members of a health
+            care
+            team. Upon successful completion of the program, graduates are eligible to take the National Council
+            Licensure
+            Examination (NCLEX-PN).
+        </p>
+        <p style="margin-bottom:0px">Apprenticeship Program Requirements:</p>
+        <ul style="margin-left:38px">
+            <li>CNA/GNA Certification for minimum of one year</li>
+            <li>LBH Patient Care experience for a minimum of one year</li>
+            <li>No disciplinary actions above an oral warning within the past year </li>
+            <li>Completion of required prerequisites</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td>Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>November 18</td>
+                    <td>4-5 pm</td>
+                    <td>Online</td>
+                    <td><a href="https://meeting.windstream.com/j/1123373978">Stream</a></td>
+                </tr>
+                <tr>
+                    <td>December 15</td>
+                    <td>11 am-Noon</td>
+                    <td>Online</td>
+                    <td><a href="https://meeting.windstream.com/j/1123373978">Stream</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Medical Front Office Program </h2>
+        <p>This program prepares participants to become Certified Medical Administrative Assistants in an office
+            setting.
+            This 6-month program also encompasses skills needed become a Certified Medical Assistant.
+            <br>
+            <strong>Registration closes 1/4/22.</strong>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon &amp; Wed, 2/7-8/8</td>
+                    <td>6-8 pm</td>
+                    <td>Online</td>
+                    <td><a href="https://forms.office.com/r/6QEpNaNrPU">Form</a></td>
+                    <td><img src="/Uploads/Public/Images/workforceDevelopment/qr6.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Career Development</h3>
+    <br>
+    <div class="coursebox">
+        <h2 class="courseHeader">Career Care Program</h2>
+        <p>This online, self-paced, healthcare-specific program helps you plan and manage your career path with LBH!
+            Reflect. Explore. Investigate. Prepare.
+            <br>
+            Computer/Internet Access Required!
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Day/Dates</td>
+                    <td>Time</td>
+                    <td>Delivery Method</td>
+                    <td colspan="2">Registration</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arranged</td>
+                    <td>Arranged</td>
+                    <td>Online</td>
+                    <td><a href="https://forms.office.com/r/kmbueuGuWB">Form</a></td>
+                    <td><img src="/Uploads/Public/Images/workforceDevelopment/qr7.png" alt="qr code"
+                            style="height:80px">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div class="coursebox">
+        <h2 class="courseHeader">Career Coaching Program</h2>
+        <p>Connect with a Career Navigator for help with career exploration, making career choices, managing career
+            changes,
+            lifelong career development and dealing with other career-related issues.
+            <br>
+            Email <a
+                href="mailto:lbh_workforce_development@lifebridgehealth.org">lbh_workforce_development@lifebridgehealth.org</a>
+            to be connected to a Career Navigator.
+        </p>
+    </div>
 </div>
 <script>
     //slider
@@ -633,8 +761,11 @@ to be connected to a Career Navigator.
 
     let currentSlideIndex = -1;                                       //sets initial index
     function advanceSliderItem() {
-
-        currentSlideIndex++;                                                   //increments
+        slides[currentSlideIndex].classList.remove("fadeIn")
+        slides[currentSlideIndex].classList.add("fadeOut") 
+        slides[currentSlideIndex].style.webkitAnimationPlayState = "running" //fades out the current slide
+        setTimeout(function (){
+            currentSlideIndex++;                                                   //increments
         if (currentSlideIndex >= slides.length) {                            //if index bigger than # of slides sets back to first slide
             currentSlideIndex = 0;
         }
@@ -646,9 +777,12 @@ to be connected to a Career Navigator.
         slides[currentSlideIndex].style.display = "flex";
         slides[currentSlideIndex].setAttribute("aria-hidden", "false");       //For Accessibility
         dots[currentSlideIndex].classList.add("active")
+        }, 1000);
+        
     }
 
     function previousSliderItem() {
+        slides[currentSlideIndex].classList.add("fadeOut") //fades out the current slide
         currentSlideIndex--;                                                //decrements
         if (currentSlideIndex <= -1) {                                      //if index less than 0 sets moves to last slide
             currentSlideIndex = slides.length - 1;
@@ -672,6 +806,7 @@ to be connected to a Career Navigator.
 
     function currentSlide(index) {
         currentSlideIndex = index;
+        slides[currentSlideIndex].classList.add("fadeOut") //fades out the current slide
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
             slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
