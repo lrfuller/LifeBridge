@@ -5,7 +5,9 @@
     .docInfoBorder {
         margin: auto;
         padding: 25px;
-        border: solid 1px;
+        border: none;
+        box-shadow: 2px 2px 15px #ccc;
+        text-align: center;
     }
 
     .slider .slide {
@@ -245,6 +247,16 @@
             opacity: 1
         } */
     }
+
+    .biophoto {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .bio {
+        text-align: center;
+        padding: 30px;
+    }
 </style>
 <div class="grid-container">
     <div style="display: flex;width: 100%;">
@@ -281,13 +293,22 @@
     </table> -->
     <div class="grid-x grid-margin-x vertical-margin-2 more-section">
         <div class="cell small-12 medium-4 group1">
-            *image placeholder*
+            <div class="bio">
+                <img class="biophoto" src="/Uploads/Public/Images/workforceDevelopment/WorkforceDev-AnitaHammond.jpg"
+                    alt="Anita Hammond">
+            </div>
         </div>
         <div class="cell small-12 medium-4 group2">
-            *image placeholder*
+            <div class="bio">
+                <img class="biophoto" src="/Uploads/Public/Images/workforceDevelopment/WorkforceDev-AndreaHanna.jpg"
+                    alt="Andrea Hanna">
+            </div>
         </div>
         <div class="cell small-12 medium-4 group3">
-            *image placeholder*
+            <div class="bio">
+                <img class="biophoto" src="/Uploads/Public/Images/workforceDevelopment/WorkforceDev-MelissaSharlat.jpg"
+                    alt="Melissa Sharlat">
+            </div>
         </div>
         <!-- </div> -->
         <!-- <div class="grid-x grid-margin-x vertical-margin-2 more-section"> -->
@@ -758,63 +779,103 @@
     //slider
     const slides = document.querySelectorAll(".slide")
     const dots = document.querySelectorAll(".dot")
+    let timer;
 
-    let currentSlideIndex = -1;                                       //sets initial index
+    let currentSlideIndex = 0;                                       //sets initial index
+
     function advanceSliderItem() {
-        slides[currentSlideIndex].classList.remove("fadeIn")
-        slides[currentSlideIndex].classList.add("fadeOut") 
-        slides[currentSlideIndex].style.webkitAnimationPlayState = "running" //fades out the current slide
-        setTimeout(function (){
-            currentSlideIndex++;                                                   //increments
+        currentSlideIndex++;
         if (currentSlideIndex >= slides.length) {                            //if index bigger than # of slides sets back to first slide
             currentSlideIndex = 0;
         }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            slides[i].setAttribute("aria-hidden", "true");                                    //For Accessibility
-            dots[i].classList.remove("active")
-        }
-        slides[currentSlideIndex].style.display = "flex";
-        slides[currentSlideIndex].setAttribute("aria-hidden", "false");       //For Accessibility
-        dots[currentSlideIndex].classList.add("active")
+
+        slides[currentSlideIndex].classList.remove("fadeIn")
+        slides[currentSlideIndex].classList.add("fadeOut")
+        slides[currentSlideIndex].style.webkitAnimationPlayState = "running" //fades out the current slide before changing
+        slides[currentSlideIndex].classList.remove("fadeOut")
+        slides[currentSlideIndex].classList.add("fadeIn")
+
+
+        setTimeout(function () {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].setAttribute("aria-hidden", "true");                                    //For Accessibility
+                dots[i].classList.remove("active")
+            }
+            slides[currentSlideIndex].style.display = "flex";
+            slides[currentSlideIndex].setAttribute("aria-hidden", "false");       //For Accessibility
+            dots[currentSlideIndex].classList.add("active")
+            clearTimeout(timer);
+            timer = setTimeout(() => advanceSliderItem(), 10000);
         }, 1000);
-        
+
+
     }
 
     function previousSliderItem() {
-        slides[currentSlideIndex].classList.add("fadeOut") //fades out the current slide
-        currentSlideIndex--;                                                //decrements
-        if (currentSlideIndex <= -1) {                                      //if index less than 0 sets moves to last slide
-            currentSlideIndex = slides.length - 1;
-        }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
-            dots[i].classList.remove("active")
-        }
-        slides[currentSlideIndex].style.display = "flex";
-        slides[currentSlideIndex].setAttribute("aria-hidden", "false");      //For Accessibility
-        dots[currentSlideIndex].classList.add("active")
+        currentSlideIndex--;                            //decrements
+        slides[currentSlideIndex].classList.remove("fadeIn")
+        slides[currentSlideIndex].classList.add("fadeOut")
+        slides[currentSlideIndex].style.webkitAnimationPlayState = "running" //fades out the current slide before changing
+        slides[currentSlideIndex].classList.remove("fadeOut")
+        slides[currentSlideIndex].classList.add("fadeIn")
+
+        setTimeout(function () {
+            if (currentSlideIndex <= -1) {                                      //if index less than 0 sets moves to last slide
+                currentSlideIndex = slides.length - 1;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
+                dots[i].classList.remove("active")
+            }
+            slides[currentSlideIndex].style.display = "flex";
+            slides[currentSlideIndex].setAttribute("aria-hidden", "false");      //For Accessibility
+            dots[currentSlideIndex].classList.add("active")
+        }, 1000);
+
+        clearTimeout(timer);
+        timer = setTimeout(() => advanceSliderItem(), 10000);
     }
 
     //next.addEventListener("click", advanceSliderItem )
     //prev.addEventListener("click", previousSliderItem )
 
-    let intervalID = setInterval(advanceSliderItem, 10000);
-    advanceSliderItem()
+    timer = setTimeout(() => advanceSliderItem(), 10000);
+
+    // advanceSliderItem()
+
+    // function fadeOutAnimation() {
+    //     slides[currentSlideIndex].classList.remove("fadeIn")
+    //     slides[currentSlideIndex].classList.add("fadeOut")
+    //     slides[currentSlideIndex].style.webkitAnimationPlayState = "running" //fades out the current slide
+    // }
+    // let fadeOutPlay = setInterval(fadeOutAnimation, 9000)
 
 
     function currentSlide(index) {
+        slides[currentSlideIndex].classList.remove("fadeIn")
+        slides[currentSlideIndex].classList.add("fadeOut")
+        slides[currentSlideIndex].style.webkitAnimationPlayState = "running" //fades out the current slide before changing
+        slides[currentSlideIndex].classList.remove("fadeOut")
+        slides[currentSlideIndex].classList.add("fadeIn")
+
         currentSlideIndex = index;
-        slides[currentSlideIndex].classList.add("fadeOut") //fades out the current slide
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
-            dots[i].classList.remove("active")
-        }
-        slides[currentSlideIndex].style.display = "flex";
-        slides[currentSlideIndex].setAttribute("aria-hidden", "false");      //For Accessibility
-        dots[currentSlideIndex].classList.add("active")
+        setTimeout(function () {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].setAttribute("aria-hidden", "true");                                  //For Accessibility
+                dots[i].classList.remove("active")
+            }
+            slides[currentSlideIndex].style.display = "flex";
+            slides[currentSlideIndex].setAttribute("aria-hidden", "false");      //For Accessibility
+            dots[currentSlideIndex].classList.add("active")
+            clearTimeout(timer);
+            timer = setTimeout(() => advanceSliderItem(), 10000);
+
+        }, 1000);
+
+
 
     }
 </script>
